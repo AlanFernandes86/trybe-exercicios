@@ -5,15 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        body{
+            font-size: 16px;
+        }
         h1 {
+            font-family: sans-serif;
             font-size: 65px;
             color: orange;
         }
         ul {
             background-color: aqua;
         }
+        p {
+            font-weight: 600;
+            font-size: 3em;
+            text-align: center;
+        }
+        li {
+            line-height: 40px;
+            font-size: 1.5em;
+        }
         .backcolor-ul-p{
             background-color: lawngreen;
+        }
+        .background-amarelo{
+            background-color: yellow;
+            font-style: italic;
+        }
+        .background-vermelho{
+            background-color: red;
+            text-decoration: line-through;
+        }
+        .background-marrom{
+            background-color: brown;
         }
     </style>
     <title>HTML</title>
@@ -22,9 +46,9 @@
     <h1>Exercícios 3.2</h1>
     <p class="backcolor-ul-p">Qual é a sua cor favorita?</p>
     <ul class="backcolor-ul-p">
-      <li>Amarelo</li>
-      <li>Vermelho</li>
-      <li>Marrom</li>
+      <li class="background-amarelo">Amarelo</li>
+      <li class="background-vermelho">Vermelho</li>
+      <li class="background-marrom">Marrom</li>
     </ul>    
 </body>
 </html>
