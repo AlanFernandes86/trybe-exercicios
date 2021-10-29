@@ -37,8 +37,8 @@ __Bloco 03: Introdução à HTML e CSS__
 03.04: HTML Semântico  ![NOK][url-badge-pendente]  
 03.05: Projeto - Lessons Learned  ![NOK][url-badge-pendente]   
 
-__Bloco 04: Introdução à JavaScript e Lógica de Programação__
-04.01: Introdução - JavaScript  ![NOK][url-badge-pendente] 
+__Bloco 04: Introdução à JavaScript e Lógica de Programação__  
+04.01: Introdução - JavaScript  ![NOK][url-badge-pendente]  
 04.01: JavaScript - Primeiros passos  ![NOK][url-badge-pendente]  
 04.02: JavaScript - Array e loop For  ![NOK][url-badge-pendente]  
 04.03: JavaScript - Lógica de Programação e Algoritmos  ![NOK][url-badge-pendente]  
@@ -56,7 +56,7 @@ __Bloco 05: JavaScript: DOM, Eventos e Web Storage__
 05.07: (Bônus) Projeto - Adivinhe a Cor  ![NOK][url-badge-pendente]  
 05.07: (Bônus) Projeto - Carta Misteriosa  ![NOK][url-badge-pendente]  
 
-__Bloco 06: HTML e CSS: Forms, Flexbox e Responsivo__ 
+__Bloco 06: HTML e CSS: Forms, Flexbox e Responsivo__  
 06.01: HTML & CSS - Forms  ![NOK][url-badge-pendente]  
 06.02: Bibliotecas JavaScript e Frameworks CSS  ![NOK][url-badge-pendente]  
 06.03: Introdução - CSS Flexbox  ![NOK][url-badge-pendente]  
@@ -71,7 +71,7 @@ __Bloco 07: Introdução à JavaScript ES6 e Testes Unitários__
 07.03: Primeiros passos em Jest   ![NOK][url-badge-pendente]  
 07.04: Projeto - JavaScript Testes Unitários   ![NOK][url-badge-pendente]  
 
-__Bloco 08: Higher Order Functions do JavaScript ES6__ 
+__Bloco 08: Higher Order Functions do JavaScript ES6__  
 08.01: JavaScript ES6 - Introdução a Higher Order Functions   ![NOK][url-badge-pendente]  
 08.02: JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort   ![NOK][url-badge-pendente]  
 08.03: JavaScript ES6 - Higher Order Functions - map e filter   ![NOK][url-badge-pendente]  
