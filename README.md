@@ -16,7 +16,7 @@ web, desenvolvimento, Front-end, Back-end, ciência da computação, metodologia
 
 ## Fundamentos do Desenvolvimento Web :partying_face:
 
-_Aqui aprendemos tudo que precisamos saber para iniciar nossa carreira no mundo do desenvolvimento Web, virando ser uma pessoa preparada para os módulos de front-end e back-end. O time da Trybe nos guia, etapa a etapa, por toda essa jornada!_
+_Aqui aprendemos tudo que precisamos saber para iniciar nossa carreira no mundo do desenvolvimento Web, visando ser uma pessoa preparada para os módulos de front-end e back-end. O time da Trybe nos guia, etapa a etapa, por toda essa jornada!_
 
 __Bloco 01: Unix & Bash__  
 01.03: Fundamentos do Desenvolvimento Web  ![OK][url-badge-feito]  
