@@ -33,7 +33,7 @@ __Bloco 03: Introdução à HTML e CSS__
 03.01: Introdução - HTML & CSS  ![OK][url-badge-feito]  
 03.01: HTML & CSS - Estruturas de página  ![OK][url-badge-feito]  
 03.02: HTML & CSS - Primeiros passos em CSS  ![OK][url-badge-feito]  
-03.03: HTML & CSS - Seletores e posicionamento  ![NOK][url-badge-pendente]   
+03.03: HTML & CSS - Seletores e posicionamento  ![OK][url-badge-feito]   
 03.04: HTML Semântico  ![NOK][url-badge-pendente]  
 03.05: Projeto - Lessons Learned  ![NOK][url-badge-pendente]   
 
