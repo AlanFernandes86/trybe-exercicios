@@ -1,33 +1,52 @@
-.super-mario {
-  width: 200px;
-  position: absolute;
+ol li {
+  background-color: yellow;
+}
+ol li:nth-of-type(even){
+color: green;
+}
+ol li:nth-of-type(odd){
+text-transform: uppercase;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: red;
+}
+h1 em, h2 em, h3 em, h4 em, h5 em, h6 em {
+  font-size: 40px;
+  border: 1px solid black;
 }
 
-.goomba {
-  width: 100px;
-  position: absolute;
-  top: 360px;
-  left: 70px;
+li {
+  font-size: 20xp;
 }
 
-.baloon {
-  width: 200px;
-  position: absolute;
-  left: 450px;
-  z-index: 0;
+li em {
+  font-weight: 800;
 }
 
-.speach {
-  font-size: 16px;
-  position: absolute;
-  left: 465px;
-  top: 110px;
-  z-index: 1;
+ul li:nth-child(-n+3) {
+  color: blue;
 }
 
-.bowser {
-  width: 200px;
-  position: absolute;
-  top: 200px;
-  left: 650px;
+ul li[value*="java" i]{
+  color: red;
+}
+
+ul li.backgroud-color-pink {
+  background-color: pink;
+}
+
+a:hover {
+  font-weight: 900;
+}
+a:hover.color-green{
+  color: green;
+}
+a:hover.color-orange{
+  color: orange;
+}
+a:hover.color-black{
+  color: black;
+}
+a:hover.color-yellow{
+  color: yellow;
 }
