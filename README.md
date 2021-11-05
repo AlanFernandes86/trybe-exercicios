@@ -2,7 +2,7 @@
 
 Repositório contendo a evolução de todos os meus exercícios e projetos do course na Trybe.
 
-![Modulo-01][url-modulo1] ![Modulo-02][url-modulo2] ![Modulo-03][url-modulo3] ![Modulo-04][url-modulo4]
+[![Modulo-01][url-modulo1]](#fundamentos-do-desenvolvimento-web-:partying_face:) [![Modulo-02][url-modulo2]](#desenvolvimento-front-end-:sunglasses:) [![Modulo-03][url-modulo3]](#desenvolvimento-back-end-:nerd_face:) [![Modulo-04][url-modulo4]](#ciência-da-computação-:monocle_face:)
 
 ## Sobre a Trybe :green_heart:
 
@@ -35,7 +35,7 @@ __Bloco 03: Introdução à HTML e CSS__
 03.02: HTML & CSS - Primeiros passos em CSS  ![OK][url-badge-feito]  
 03.03: HTML & CSS - Seletores e posicionamento  ![OK][url-badge-feito]   
 03.04: HTML Semântico  ![OK][url-badge-feito]  
-03.05: Projeto - Lessons Learned  ![NOK][url-badge-pendente]   
+[03.05: Projeto - Lessons Learned](https://alanfernandes86.github.io/projetos/lessons-learned/)  ![OK][url-badge-feito]   
 
 __Bloco 04: Introdução à JavaScript e Lógica de Programação__  
 04.01: Introdução - JavaScript  ![NOK][url-badge-pendente]  
