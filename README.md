@@ -2,7 +2,7 @@
 
 Repositório contendo a evolução de todos os meus exercícios e projetos do course na Trybe.
 
-[![Modulo-01][url-modulo1]](#fundamentos-do-desenvolvimento-web-partying_face) [![Modulo-02][url-modulo2]](#desenvolvimento-front-end-:sunglasses:) [![Modulo-03][url-modulo3]](#desenvolvimento-back-end-:nerd_face:) [![Modulo-04][url-modulo4]](#ciência-da-computação-:monocle_face:)
+[![Modulo-01][url-modulo1]](#fundamentos-do-desenvolvimento-web-partying_face) [![Modulo-02][url-modulo2]](#desenvolvimento-front-end-sunglasses) [![Modulo-03][url-modulo3]](#desenvolvimento-back-end-nerd_face) [![Modulo-04][url-modulo4]](#ci%C3%AAncia-da-computa%C3%A7%C3%A3o-monocle_face)
 
 ## Sobre a Trybe :green_heart:
 
