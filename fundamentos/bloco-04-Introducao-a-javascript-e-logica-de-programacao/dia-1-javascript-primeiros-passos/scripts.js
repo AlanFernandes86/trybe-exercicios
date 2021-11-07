@@ -92,7 +92,7 @@ switch (chessPiece.toLowerCase()) {
         break;
     case 'queen':
         console.log(
-            'The queen moves diagonally, horizontally, or vertically any number of squares.'
+            'The queen moves diagonally, horizontally, or vertically any number of squares.',
             );
         break;
     case 'rook':
@@ -115,3 +115,33 @@ switch (chessPiece.toLowerCase()) {
 }
 
 console.log('\n=== Fim exercício 6 ===');
+
+console.log('=== Início exercício 7 ===\n');
+
+const nota = 100;
+let error = false;
+let conceito;
+
+if (nota < 0 || nota > 100) {
+    error = true;
+} else if (nota >= 90) {
+    conceito = 'A';
+} else if (nota >= 80) {
+    conceito = 'B';
+} else if (nota >= 70) {
+    conceito = 'C';
+} else if (nota >= 60) {
+    conceito = 'D';
+} else if (nota >= 50) {
+    conceito = 'E';
+} else if (nota < 50) {
+    conceito = 'F';
+}
+
+if (!error) {
+    console.log(`O conceito obtido foi ${conceito}`);
+} else {
+    console.log('Nota inválida.');
+}
+
+console.log('\n=== Fim exercício 7 ===');
