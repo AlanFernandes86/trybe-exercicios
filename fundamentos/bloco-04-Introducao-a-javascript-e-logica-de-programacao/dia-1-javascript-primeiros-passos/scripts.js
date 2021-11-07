@@ -35,3 +35,23 @@ if (num1 > num2) {
 console.log(maior);
 
 console.log('\n=== Fim exercício 2 ===');
+
+console.log('=== Início exercício 3 ===\n');
+
+const nu1 = 1789;
+const nu2 = 2697;
+const nu3 = 5749;
+
+let maior2;
+
+if (nu1 > nu2) {
+    maior2 = nu1;
+} else if (nu3 > nu1) {
+    maior2 = nu3;
+} else {
+    maior2 = nu2;
+}
+
+console.log(maior2);
+
+console.log('\n=== Fim exercício 3 ===');
