@@ -55,3 +55,18 @@ if (nu1 > nu2) {
 console.log(maior2);
 
 console.log('\n=== Fim exercício 3 ===');
+
+console.log('=== Início exercício 4 ===\n');
+
+const valor = -59741682;
+let sinal = 'zero';
+
+if (valor < 0) {
+    sinal = 'negative';
+} else if (valor > 0) {
+    sinal = 'positive';
+}
+
+console.log(sinal);
+
+console.log('\n=== Fim exercício 4 ===');
