@@ -155,7 +155,7 @@ const n3 = 55685473;
 console.log(
     ((n1 % 2) === 0)
     || ((n2 % 2) === 0)
-    || ((n3 % 2) === 0),
+    || ((n3 % 2) === 0)
 );
 
 console.log('\n=== Fim exercício 8 ===');
@@ -165,7 +165,54 @@ console.log('=== Início exercício 9 ===\n');
 console.log(
     !((n1 % 2) === 0)
     || !((n2 % 2) === 0)
-    || !((n3 % 2) === 0),
+    || !((n3 % 2) === 0)
 );
 
 console.log('\n=== Fim exercício 9 ===');
+
+console.log('=== Início exercício 10 ===\n');
+
+const prodCusto = 10;
+const prodVenda = 14;
+const lucro = (prodVenda - prodCusto) - (prodCusto * 0.2)
+
+if (prodCusto < 0 || prodVenda < 0) {
+    console.log('Dados inválidos!');
+} else {
+    console.log(lucro * 1000);
+}
+
+console.log('\n=== Fim exercício 10 ===');
+
+console.log('=== Início exercício 11 ===\n');
+
+const salario = 3000;
+let salarioBase;
+let inss;
+let ir = 0;
+
+if (salario < 1556.94) {
+    inss = salario * 0.08;
+} else if (salario > 1556.95 && salario < 2594.92) {
+    inss = salario * 0.09;
+} else if (salario > 2594.93 && salario < 5189.82) {
+    inss = salario * 0.11;
+} else {
+    inss = 570.88
+}
+
+salarioBase = salario - inss;
+
+if (salarioBase > 1903.99 && salarioBase < 2826.65) {
+    ir = (salarioBase * 0.075) - 142.80;
+} else if (salarioBase >= 2826.66 && salarioBase <= 3751.05) {
+    ir = (salarioBase * 0.15) - 354.80;
+} else if (salarioBase >= 3751.06 && salarioBase <= 4664.68) {
+    ir = (salarioBase * 0.225) - 636.13;
+} else if (salarioBase > 4664.68) {
+    ir = (salarioBase * 0.275) - 869.36;
+}
+
+console.log(`Salário líquido de: R$ ${salario - inss - ir}`);
+
+console.log('\n=== Fim exercício 11 ===');
