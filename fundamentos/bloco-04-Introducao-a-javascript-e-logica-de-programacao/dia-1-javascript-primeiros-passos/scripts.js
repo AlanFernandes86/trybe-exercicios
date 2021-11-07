@@ -145,3 +145,27 @@ if (!error) {
 }
 
 console.log('\n=== Fim exercício 7 ===');
+
+console.log('=== Início exercício 8 ===\n');
+
+const n1 = 1564771;
+const n2 = 587427;
+const n3 = 55685473;
+
+console.log(
+    ((n1 % 2) === 0)
+    || ((n2 % 2) === 0)
+    || ((n3 % 2) === 0),
+);
+
+console.log('\n=== Fim exercício 8 ===');
+
+console.log('=== Início exercício 9 ===\n');
+
+console.log(
+    !((n1 % 2) === 0)
+    || !((n2 % 2) === 0)
+    || !((n3 % 2) === 0),
+);
+
+console.log('\n=== Fim exercício 9 ===');
