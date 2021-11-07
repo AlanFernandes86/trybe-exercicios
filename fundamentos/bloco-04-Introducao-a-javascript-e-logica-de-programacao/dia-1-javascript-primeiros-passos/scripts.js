@@ -32,7 +32,7 @@ if (num1 > num2) {
     maior = num2;
 }
 
-console.log(maior);
+console.log(`Maior número = ${maior}`);
 
 console.log('\n=== Fim exercício 2 ===');
 
@@ -52,7 +52,7 @@ if (nu1 > nu2) {
     maior2 = nu2;
 }
 
-console.log(maior2);
+console.log(`Maior número = ${maior2}`);
 
 console.log('\n=== Fim exercício 3 ===');
 
@@ -67,7 +67,7 @@ if (valor < 0) {
     sinal = 'positive';
 }
 
-console.log(sinal);
+console.log(`This number is ${sinal}`);
 
 console.log('\n=== Fim exercício 4 ===');
 
@@ -78,6 +78,40 @@ const B = 90;
 const C = 30;
 const sumABC = A + B + C;
 
-console.log(sumABC === 180 && A > 0 && B > 0 && C > 0);
+console.log(`is this a triangle? ${sumABC === 180 && A > 0 && B > 0 && C > 0}`);
 
 console.log('\n=== Fim exercício 5 ===');
+
+console.log('=== Início exercício 6 ===\n');
+
+const chessPiece = 'QUEEN';
+
+switch (chessPiece.toLowerCase()) {
+    case 'king':
+        console.log('The king moves one square in any direction.');
+        break;
+    case 'queen':
+        console.log(
+            'The queen moves diagonally, horizontally, or vertically any number of squares.'
+            );
+        break;
+    case 'rook':
+        console.log('The rook moves horizontally or vertically any number of squares.');
+        break;
+    case 'knights':
+        console.log('The knights moves in an ‘L’ shape’: two squares in a horizontal or' 
+         + 'vertical direction, then move one square horizontally or vertically.');
+        break;
+    case 'bishop':
+        console.log('The bishop moves in diagonals.');
+        break;
+    case 'pawns':
+        console.log('The pawns moves vertically forward one square, with the option'
+        + 'to move two squares if they have not yet moved.');
+        break;
+    default:
+        console.log(`Piece "${chessPiece.toLowerCase()}" not found.`);
+        break;
+}
+
+console.log('\n=== Fim exercício 6 ===');
