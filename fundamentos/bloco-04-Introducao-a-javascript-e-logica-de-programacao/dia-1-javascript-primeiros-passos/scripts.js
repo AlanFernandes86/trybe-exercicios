@@ -70,3 +70,14 @@ if (valor < 0) {
 console.log(sinal);
 
 console.log('\n=== Fim exercício 4 ===');
+
+console.log('=== Início exercício 5 ===\n');
+
+const A = 60;
+const B = 90;
+const C = 30;
+const sumABC = A + B + C;
+
+console.log(sumABC === 180 && A > 0 && B > 0 && C > 0);
+
+console.log('\n=== Fim exercício 5 ===');
