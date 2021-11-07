@@ -38,7 +38,7 @@ __Bloco 03: Introdução à HTML e CSS__
 [03.05: Projeto - Lessons Learned](https://alanfernandes86.github.io/projetos/lessons-learned/)  ![OK][url-badge-feito]   
 
 __Bloco 04: Introdução à JavaScript e Lógica de Programação__  
-04.01: Introdução - JavaScript  ![NOK][url-badge-pendente]  
+04.01: Introdução - JavaScript  ![OK][url-badge-feito]  
 04.01: JavaScript - Primeiros passos  ![NOK][url-badge-pendente]  
 04.02: JavaScript - Array e loop For  ![NOK][url-badge-pendente]  
 04.03: JavaScript - Lógica de Programação e Algoritmos  ![NOK][url-badge-pendente]  
