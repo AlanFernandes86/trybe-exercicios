@@ -20,3 +20,18 @@ for (let number of numbers) {
 console.log('Resultado do somatório =', result);
 
 console.log('\n=== Fim exercício 02 ===');
+
+console.log('=== Início exercício 03 ===\n');
+
+let soma = 0;
+let media;
+// eslint-disable-next-line prefer-const
+for (let number of numbers) {
+    soma += number;
+}
+// eslint-disable-next-line prefer-const
+media = soma / numbers.length;
+
+console.log('Média dos valores =', media);
+
+console.log('\n=== Fim exercício 03 ===');
