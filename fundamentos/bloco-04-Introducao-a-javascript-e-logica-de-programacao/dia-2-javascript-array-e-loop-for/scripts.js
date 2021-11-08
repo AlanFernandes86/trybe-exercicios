@@ -57,7 +57,7 @@ for (let number of numbers) {
     }
 }
 
-console.log('O maior número é: ', biggerNumber);
+console.log('O maior número é:', biggerNumber);
 
 console.log('\n=== Fim exercício 05 ===');
 
@@ -72,6 +72,24 @@ for (let number of numbers) {
     }
 }
 
-console.log('A quantidade de números impares é: ', oddAmount);
+if (oddAmount === 0) {
+    console.log('nenhum valor ímpar encontrado');
+} else {
+    console.log('A quantidade de números impares é:', oddAmount);
+}
 
 console.log('\n=== Fim exercício 06 ===');
+
+console.log('=== Início exercício 07 ===\n');
+
+let smallerNumber = numbers[0];
+
+for (let number of numbers) {
+    if (number < smallerNumber) {
+        smallerNumber = number;
+    }
+}
+
+console.log('O menor número é:', smallerNumber);
+
+console.log('\n=== Fim exercício 07 ===');
