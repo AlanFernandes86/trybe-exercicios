@@ -93,3 +93,15 @@ for (let number of numbers) {
 console.log('O menor número é:', smallerNumber);
 
 console.log('\n=== Fim exercício 07 ===');
+
+console.log('=== Início exercício 08 ===\n');
+
+let newArray = [];
+
+for (let i = 1; i <= 25; i++) {
+    newArray.push(i);
+}
+
+console.log(newArray);
+
+console.log('\n=== Fim exercício 08 ===');
