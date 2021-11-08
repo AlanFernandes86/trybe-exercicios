@@ -60,3 +60,18 @@ for (let number of numbers) {
 console.log('O maior número é: ', biggerNumber);
 
 console.log('\n=== Fim exercício 05 ===');
+
+console.log('=== Início exercício 06 ===\n');
+
+let oddAmount = 0;
+
+// eslint-disable-next-line prefer-const
+for (let number of numbers) {
+    if (!(number % 2 === 0)) {
+        oddAmount += 1;
+    }
+}
+
+console.log('A quantidade de números impares é: ', oddAmount);
+
+console.log('\n=== Fim exercício 06 ===');
