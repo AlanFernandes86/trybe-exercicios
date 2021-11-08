@@ -8,3 +8,15 @@ for (let number of numbers) {
 }
 
 console.log('\n=== Fim exercício 01 ===');
+
+console.log('=== Início exercício 02 ===\n');
+
+let result = 0;
+// eslint-disable-next-line prefer-const
+for (let number of numbers) {
+    result += number;
+}
+
+console.log('Resultado do somatório =', result);
+
+console.log('\n=== Fim exercício 02 ===');
