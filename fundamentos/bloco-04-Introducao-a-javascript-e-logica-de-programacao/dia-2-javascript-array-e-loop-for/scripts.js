@@ -105,3 +105,12 @@ for (let i = 1; i <= 25; i++) {
 console.log(newArray);
 
 console.log('\n=== Fim exercício 08 ===');
+
+console.log('=== Início exercício 09 ===\n');
+
+for (let elementos of newArray) {
+    let divisao = elementos/2;
+    console.log(divisao);
+}
+
+console.log('\n=== Fim exercício 09 ===');
