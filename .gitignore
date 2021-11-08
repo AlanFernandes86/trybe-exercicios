@@ -18,8 +18,11 @@
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode
-*/*/*/node_modules
-*/*/*/.eslintrc.json
-*/*/*/.vscode/*
-*/*/*/package-lock.json
-*/*/*/package.json
+
+.eslintrc.json
+.vscode/*
+package-lock.json
+package.json
+node_modules
+launch.json
+settings.json
