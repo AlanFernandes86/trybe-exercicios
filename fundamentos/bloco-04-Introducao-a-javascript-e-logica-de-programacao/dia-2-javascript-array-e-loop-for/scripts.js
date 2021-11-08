@@ -35,3 +35,13 @@ media = soma / numbers.length;
 console.log('Média dos valores =', media);
 
 console.log('\n=== Fim exercício 03 ===');
+
+console.log('=== Início exercício 04 ===\n');
+
+if (media > 20) {
+    console.log('valor maior que 20');
+} else {
+    console.log('valor menor ou igual a 20');
+}
+
+console.log('\n=== Fim exercício 04 ===');
