@@ -45,3 +45,18 @@ if (media > 20) {
 }
 
 console.log('\n=== Fim exercício 04 ===');
+
+console.log('=== Início exercício 05 ===\n');
+
+let biggerNumber = 0;
+
+// eslint-disable-next-line prefer-const
+for (let number of numbers) {
+    if (number > biggerNumber) {
+        biggerNumber = number;
+    }
+}
+
+console.log('O maior número é: ', biggerNumber);
+
+console.log('\n=== Fim exercício 05 ===');
