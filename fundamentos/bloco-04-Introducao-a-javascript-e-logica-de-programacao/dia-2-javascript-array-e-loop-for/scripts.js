@@ -114,3 +114,52 @@ for (let elementos of newArray) {
 }
 
 console.log('\n=== Fim exercício 09 ===');
+
+console.log('=== Início bônus 01 ===\n');
+
+for (let index = 1; index < numbers.length; index += 1) {
+    for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+      if (numbers[index] < numbers[secondIndex]) {
+        let position = numbers[index];
+        numbers[index] = numbers[secondIndex];
+        numbers[secondIndex] = position;
+      }
+    }
+  }
+
+  console.log(numbers);
+
+console.log('\n=== Fim bônus 01 ===');
+
+console.log('=== Início bônus 02 ===\n');
+
+for (let index = 1; index < numbers.length; index += 1) {
+    for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+      if (numbers[index] > numbers[secondIndex]) {
+        let position = numbers[index];
+        numbers[index] = numbers[secondIndex];
+        numbers[secondIndex] = position;
+      }
+    }
+  }
+
+  console.log(numbers);
+
+console.log('\n=== Fim bônus 02 ===');
+
+console.log('=== Início bônus 03 ===\n');
+
+const numbers2 = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let array2 = [];
+
+for (let index = 0; index < numbers2.length; index += 1) {
+    if ((index + 1) === numbers2.length) {
+        array2.push(numbers2[index] * 2);
+    } else {
+        array2.push(numbers2[index] * numbers2[index + 1]);
+    }
+}
+
+  console.log(array2);
+
+console.log('\n=== Fim bônus 03 ===');
