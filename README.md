@@ -41,7 +41,7 @@ __Bloco 04: Introdução à JavaScript e Lógica de Programação__
 04.01: Introdução - JavaScript  ![OK][url-badge-feito]  
 04.01: JavaScript - Primeiros passos  ![OK][url-badge-feito]  
 04.02: JavaScript - Array e loop For  ![OK][url-badge-feito]  
-04.03: JavaScript - Lógica de Programação e Algoritmos  ![NOK][url-badge-pendente]  
+04.03: JavaScript - Lógica de Programação e Algoritmos  ![OK][url-badge-feito]  
 04.04: JavaScript - Objetos e funções  ![NOK][url-badge-pendente]  
 04.05: Projeto - Playground Functions  ![NOK][url-badge-pendente]  
 
