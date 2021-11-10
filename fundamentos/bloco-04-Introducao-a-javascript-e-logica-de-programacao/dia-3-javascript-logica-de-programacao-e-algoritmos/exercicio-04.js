@@ -14,7 +14,7 @@ for (let i = 1; i <= n; i++) {
       } else {
         x += " ";
       }
-      
+
     }
 
     console.log(x);
@@ -24,4 +24,5 @@ for (let i = 1; i <= n; i++) {
 /* 
 distância da margem esquerda e direita que possuí espaços
 preciso somente das linhas ímpares
+procuro valor entre a margem esquerda e direita
 */
