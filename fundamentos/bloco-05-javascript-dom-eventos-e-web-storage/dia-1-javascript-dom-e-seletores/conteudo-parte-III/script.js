@@ -35,4 +35,3 @@ h3InNoEmergencyTask.forEach((h3) => {
 });
 
 footer.style.backgroundColor = 'green';
-
