@@ -13,3 +13,8 @@ main.className = 'main-content';
 
 body.appendChild(main);
 
+// exercício 03
+const section = document.createElement('section');
+section.className = 'center-content';
+
+main.appendChild(section);
