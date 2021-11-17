@@ -18,3 +18,13 @@ const section = document.createElement('section');
 section.className = 'center-content';
 
 main.appendChild(section);
+
+// exercício 04
+const p = document.createElement('p');
+p.innerText = 'Lorem ipsum dolor sit amet';
+section.appendChild(p);
+
+// exercício 05
+const section2 = document.createElement('section');
+section2.className = 'left-content';
+main.appendChild(section2);
