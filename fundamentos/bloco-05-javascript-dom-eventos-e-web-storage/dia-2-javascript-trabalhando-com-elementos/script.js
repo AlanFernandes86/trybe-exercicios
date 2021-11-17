@@ -40,3 +40,19 @@ image.src = 'https://picsum.photos/200';
 image.className = 'small-image';
 
 section2.appendChild(image);
+
+// exercício 08
+const list = document.createElement('ul');
+section3.appendChild(list);
+let numerosPorExtenso = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+numerosPorExtenso.forEach((numero) => {
+    const li = document.createElement('li');
+    li.innerText = numero
+    list.appendChild(li);
+});
+
+// exercício 09
+for (let i = 0; i < 3; i += 1) {
+    const h3 = document.createElement('h3');
+    main.appendChild(h3);
+}
