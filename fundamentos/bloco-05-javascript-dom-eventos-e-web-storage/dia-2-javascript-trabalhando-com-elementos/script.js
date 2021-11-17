@@ -28,3 +28,15 @@ section.appendChild(p);
 const section2 = document.createElement('section');
 section2.className = 'left-content';
 main.appendChild(section2);
+
+// exercício 06
+const section3 = document.createElement('section');
+section3.className = 'right-content';
+main.appendChild(section3);
+
+// exercício 07
+const image = document.createElement('img');
+image.src = 'https://picsum.photos/200';
+image.className = 'small-image';
+
+section2.appendChild(image);
