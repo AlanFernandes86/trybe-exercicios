@@ -56,3 +56,36 @@ for (let i = 0; i < 3; i += 1) {
     const h3 = document.createElement('h3');
     main.appendChild(h3);
 }
+
+// PARTE 2
+
+// exercício 01
+h1.className = 'title';
+
+// exercício 02
+let tagsH3 = document.getElementsByTagName('h3');
+for (let i = 0; i < tagsH3.length; i++) {
+    tagsH3[i].className = 'description';
+}
+
+// exercício 03
+main.removeChild(section2);
+
+// exercício 04
+section3.style.margin = 'auto';
+
+// exercício 05
+let sectionPai = section.parentElement;
+sectionPai.style.backgroundColor = 'green';
+
+// exercício 06
+let getList = list.children;
+let listItens = [];
+for (let i = 0; i < getList.length; i++) {
+        if(getList[i].innerText === 'Nove' || getList[i].innerText === 'Dez') {
+        listItens.push(getList[i]);
+    }
+}
+listItens.forEach((item) => {
+    list.removeChild(item);
+});
