@@ -43,9 +43,19 @@ function insertDays() {
   }
 }
 
+const buttonsContainer = document.querySelector('.buttons-container');
+const button = document.createElement('button');
+
+function createButton(feriado) {
+    button.id = 'btn-holiday';
+    button.innerText = feriado;
+    buttonsContainer.appendChild(button);
+}
+
 function init() {
   createDaysOfTheWeek();
   insertDays();
+  createButton('Feriados');
 }
 
 init();
