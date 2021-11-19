@@ -42,13 +42,13 @@ __Bloco 04: Introdução à JavaScript e Lógica de Programação__
 04.01: JavaScript - Primeiros passos  ![OK][url-badge-feito]  
 04.02: JavaScript - Array e loop For  ![OK][url-badge-feito]  
 04.03: JavaScript - Lógica de Programação e Algoritmos  ![OK][url-badge-feito]  
-04.04: JavaScript - Objetos e funções  ![NOK][url-badge-pendente]  
-04.05: Projeto - Playground Functions  ![NOK][url-badge-pendente]  
+04.04: JavaScript - Objetos e funções  ![OK][url-badge-feito]  
+[04.05: Projeto - Playground Functions](https://github.com/AlanFernandes86/alanfernandes86.github.io/tree/main/projetos/playground-functions)  ![OK][url-badge-feito]  
 
 __Bloco 05: JavaScript: DOM, Eventos e Web Storage__  
-05.01: JavaScript - DOM e seletores  ![NOK][url-badge-pendente]  
-05.02: JavaScript - Trabalhando com elementos  ![NOK][url-badge-pendente]  
-05.03: JavaScript - Eventos  ![NOK][url-badge-pendente]  
+05.01: JavaScript - DOM e seletores  ![OK][url-badge-feito]  
+05.02: JavaScript - Trabalhando com elementos  ![OK][url-badge-feito]  
+05.03: JavaScript - Eventos  ![OK][url-badge-feito]  
 05.04: JavaScript - Web Storage  ![NOK][url-badge-pendente]  
 05.05: Fundamentos - JavaScript - Projetos  ![NOK][url-badge-pendente]  
 05.06: Projeto - Lista de tarefas  ![NOK][url-badge-pendente]  
