@@ -15,7 +15,7 @@
   #btn-add {
     margin: 0;
   }
-  
+
   .buttons-container {
     background-color: #eee;
     display: inline-block;
@@ -152,4 +152,8 @@
     font-size: 20px;
     margin: 0px;
     padding: 10px 0;
+  }
+
+  .background-holidays {
+    background-color: rgb(230, 255, 230);
   }

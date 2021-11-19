@@ -52,6 +52,15 @@ function createButton(feriado) {
     buttonsContainer.appendChild(button);
 }
 
+button.onclick = () => {
+    let holidays = document.querySelectorAll('.holiday');
+    holidays.forEach((holiday) => {
+        holiday.classList.toggle('background-holidays');
+    })
+};
+
+
+
 function init() {
   createDaysOfTheWeek();
   insertDays();
