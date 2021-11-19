@@ -69,3 +69,7 @@ body {
   .tech {
     transform: translateY(-20px);
   }
+
+  #my-spotrybefy:hover {
+    cursor: crosshair;
+  }

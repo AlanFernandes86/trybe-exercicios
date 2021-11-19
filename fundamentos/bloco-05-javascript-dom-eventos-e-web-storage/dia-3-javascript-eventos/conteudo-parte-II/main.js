@@ -15,25 +15,31 @@ function resetTechClass() {
     thirdLi.classList.remove('tech');
 }
 
+function resetInput() {
+    input.value = '';
+}
+
 // 2. Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
 // 2.1. Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
-container.addEventListener('click', (event) => {
+/* container.addEventListener('click', (event) => {
+    
+}); */
+
+container.onclick = (event) => {
     resetTechClass();
+    resetInput();
     switch (event.target.id){
         case 'first-li':
             firstLi.className = 'tech';
-            input.value = '';
             break;
         case 'second-li':
             secondLi.className = 'tech';
-            input.value = '';
             break;
         case 'third-li':
             thirdLi.className = 'tech';
-            input.value = '';
             break;
     }
-});
+}
 
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
@@ -54,6 +60,7 @@ myWebpage.ondblclick = () => {
 // a cor do mesmo;
 myWebpage.onmouseover = () => {
     myWebpage.style.color = 'green';
+    
 }
 myWebpage.onmouseleave = () => {
     myWebpage.style.color = 'white';
