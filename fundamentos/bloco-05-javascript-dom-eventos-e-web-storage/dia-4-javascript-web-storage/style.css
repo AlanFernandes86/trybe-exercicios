@@ -5,6 +5,7 @@
 body {
     margin: auto;
     padding-top: 5em;
+    padding-bottom: 5em;
     width: 1080px;
     text-align: center;
 }
@@ -23,43 +24,31 @@ main {
     vertical-align: top;
  }
 
- aside header {
-     text-align:center;
+ aside header {     
      background-color: black;
      color: white;
      padding: 1em;
  }
 
  aside h3 {
-    padding-top: 4px;
-    border-top: 1px solid magenta;
+    padding-right: 4px;
+    border-right: 2px solid white;
 }
 
 aside ul {
     margin-top: 1em;
-    text-align: center;
     padding-inline-start: 0px;
 }
 
 .menu-item {
     padding: 0;
     list-style: none;
-    display: inline-block;
     font-size: 0.8em;
-    border-top: 1px solid white;
     margin-bottom: 8px;
 }
 
-.menu-item:nth-of-type(odd){
-    margin-right: 8px;
-}
-
-.menu-item:nth-of-type(even){
-    margin-left: 8px;
-}
-
 .menu-item:hover {
-    border-color: rgb(250, 136, 250);
+    color: rgb(250, 136, 250);
     cursor: pointer;
 }
 
@@ -67,7 +56,7 @@ main section {
     margin-bottom: 2em;
 }
 
-h1 {
+.title h1 {
     text-align: center;
 }
 
@@ -76,6 +65,7 @@ h1 {
     font-size: 0.8em;
 }
 
+/* https://developer.mozilla.org/pt-BR/docs/Web/CSS/text-align */
 .text p {
     text-align: justify;
     margin-bottom: 1em;
@@ -84,7 +74,6 @@ h1 {
 
 aside section {
     margin-top: 1em;
-    margin-left: 1em;
     padding: 1em;
     border: 1px solid black;
     background-color: black;
@@ -117,6 +106,33 @@ aside section {
     display: inline-block;
     vertical-align: middle;
     margin-right: 4px;
+}
+
+#section-font-size input {
+    height: 6px;
+    width: 87%;
+    display: inline-block;
+}
+
+#section-font-size span {
+    display: inline-block;
+    font-size: 0.7em;
+}
+
+#section-line-height span {
+    margin: 0 16px 0 16px;
+}
+
+#section-line-height i {
+    cursor: pointer;
+}
+
+#section-line-height i:active {
+    opacity: 0.7;
+}
+
+#section-line-height p {
+    margin-top: 8px;
 }
 
 

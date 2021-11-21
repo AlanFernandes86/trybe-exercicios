@@ -14,6 +14,9 @@ window.onload = () => {
     setMenu();
     backgroundColorListener();
     textColorListener();
+    textSizeListener();
+    lineHeightListener();
+    fontTypeListener();
 
     function setMenu() {
         const menu = document.getElementById('menu');
@@ -33,11 +36,12 @@ window.onload = () => {
         function menuToggle(target) {
             let targetSection = document.getElementById(target.attributes.section.nodeValue);
             if (auxToggle[target.id].selected) {
-                target.style.borderColor = "";
+                target.style = "color: white;";
                 auxToggle[target.id].selected = false;
                 targetSection.style.display = "none";
             } else {
-                target.style.borderColor = auxToggle[target.id].color;
+                target.style.color = auxToggle[target.id].color;
+                target.style = `border-right: solid 2px ${auxToggle[target.id].color}; padding-right: 4px;`;
                 auxToggle[target.id].selected = true;
                 targetSection.style.display = "block";
                 targetSection.style.borderColor = auxToggle[target.id].color;
@@ -62,39 +66,103 @@ window.onload = () => {
             main.style.backgroundColor = event.target.value;
             colorPicker.style.backgroundColor = event.target.value;
         };
+
         colorPickerInput.onchange = (event) => {
+
         };
     }
 
     function textColorListener() {
         const titleColorPick = document.getElementById('title-color');
-        const titleSubtitleColorPick = document.getElementById('subtitle-color');
+        const subtitleColorPick = document.getElementById('subtitle-color');
         const textColorPick = document.getElementById('text-color');
 
         titleColorPick.oninput = (event) => {
             title.style.color = event.target.value;
         };
-        titleColorPick.onchange = (event) => {
-        };
-
-        titleSubtitleColorPick.oninput = (event) => {
+        
+        subtitleColorPick.oninput = (event) => {
             subtitle.forEach((p) => {
                 p.style.color = event.target.value;
             })
-        };
-        titleSubtitleColorPick.onchange = (event) => {
-        };
+        };   
 
         textColorPick.oninput = (event) => {
             text.forEach((p) => {
                 p.style.color = event.target.value;
             })
         };
+
+        titleColorPick.onchange = (event) => {
+        };
+
+        subtitleColorPick.onchange = (event) => {
+        };
+
         textColorPick.onchange = (event) => {
-        };      
+        };  
+            
     }
     
+    // https://www.ti-enxame.com/pt/javascript/como-obter-o-tamanho-da-fonte-em-html/1070829157/
     function textSizeListener() {
+        const titleSizeSlider = document.getElementById('title-size');
+        const subtitleSizeSlider = document.getElementById('subtitle-size');
+        const textSizeSlider = document.getElementById('text-size');
+
+        const actualTitleSize = parseInt(window.getComputedStyle(title).fontSize);
+        const actualSubtitleSize = parseInt(window.getComputedStyle(subtitle[0]).fontSize);
+        const actualTextSize = parseInt(window.getComputedStyle(text[0]).fontSize);
+
+        titleSizeSlider.value = actualTitleSize;
+        subtitleSizeSlider.value = actualSubtitleSize;
+        textSizeSlider.value = actualTextSize;
+
+        titleSizeSlider.nextElementSibling.innerText = `${(actualTitleSize<10)?0:''}${actualTitleSize}px`;
+        subtitleSizeSlider.nextElementSibling.innerText = `${(actualSubtitleSize<10)?0:''}${actualSubtitleSize}px`;
+        textSizeSlider.nextElementSibling.innerText = `${(actualTextSize<10)?0:''}${actualTextSize}px`;
+
+        // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/instanceof
+        function setTextSize(event, element) {
+            const valueFormatted = `${(event.target.value < 10) ? 0 : ''}${event.target.value}px`;
+            event.target.nextElementSibling.innerText = `${(event.target.value < 10) ? 0 : ''}${event.target.value}px`;
+            if (element instanceof NodeList) {
+                element.forEach((element) => {
+                    element.style.fontSize = valueFormatted;
+                });
+            } else {
+                element.style.fontSize = valueFormatted;
+            }            
+        }
+
+        titleSizeSlider.oninput = (event) => {
+            setTextSize(event, title);
+        }
+        subtitleSizeSlider.oninput = (event) => {
+            setTextSize(event, subtitle);
+        }
+        textSizeSlider.oninput = (event) => {
+            setTextSize(event, text);
+        }
+
+        titleSizeSlider.onchange = (event) => {
+            
+        }
+        subtitleSizeSlider.onchange = (event) => {
+            
+        }
+        textSizeSlider.onchange = (event) => {
+            
+        }
+
+    }
+
+    // https://www.w3schools.com/jsref/jsref_tofixed.asp
+    function lineHeightListener() {
+
+    }
+
+    function fontTypeListener() {
 
     }
 }
