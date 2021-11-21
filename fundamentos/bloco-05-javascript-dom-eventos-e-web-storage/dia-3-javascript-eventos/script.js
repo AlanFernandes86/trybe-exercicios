@@ -1,7 +1,4 @@
 
-
-
-
 const dezDaysList = [
   29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
   21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
@@ -86,19 +83,21 @@ buttonFriday.onclick = () => {
 
 // Exercício 06
 function dayZoom() {
-  let listLi = document.querySelectorAll('.day');
-  console.log(listLi);
-  for (let li of listLi) {
-    li.onmouseover = (event) => {
-      li.classList.add('li-increase');
-    };
-    li.onmouseleave = (event) => {
-      li.classList.remove('li-increase');
-    };
+  
+  ulDays.onmouseover = (event) => {
+    if (event.target.id !== "days") {
+      event.target.style.fontSize = '30px';
+    }
   }
+  // https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseout_event
+  // mouseout identifica quando o cursos sai do elemento filho
+  ulDays.onmouseout = (event) => {
+    if (event.target.id !== "days") {
+      event.target.style.fontSize = '20px';
+    }
+  }
+
 }
-
-
 
 function init() {
   createDaysOfTheWeek();
