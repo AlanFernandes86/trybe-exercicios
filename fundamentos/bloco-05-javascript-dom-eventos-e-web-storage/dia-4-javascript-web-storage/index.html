@@ -9,6 +9,7 @@
     <script
       src="https://kit.fontawesome.com/a076d05399.js"
       crossorigin="anonymous"
+      async
     ></script>
     <title>JavaScript - Web Storage</title>
   </head>
@@ -133,13 +134,17 @@
       <section id="section-line-height">
         <label>Espaçamento entre linhas</label>
         <p>
-          <i class="fas fa-plus"></i>
+          <i class="fas fa-plus" id='plus-line-height'></i>
           <span>1</span>
-          <i class="fas fa-minus"></i>
+          <i class="fas fa-minus" id="minus-line-height"></i>
         </p>
       </section>
 
-      <section id="section-font-type"></section>
+      <section id="section-font-type">
+        <label for="select-font-family">Fonte do texto</label>
+        <br>
+        <select name="fonts" id="select-font-family"></select>
+      </section>
     </aside>
 
     <script src="script.js"></script>

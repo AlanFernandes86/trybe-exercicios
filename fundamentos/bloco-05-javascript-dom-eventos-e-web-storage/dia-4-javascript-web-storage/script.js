@@ -33,20 +33,23 @@ window.onload = () => {
             auxToggle[item.id] = {color, selected};
         });
 
+        console.log(menuList);
+        
         function menuToggle(target) {
             let targetSection = document.getElementById(target.attributes.section.nodeValue);
             if (auxToggle[target.id].selected) {
-                target.style = "color: white;";
+                target.style = "";
                 auxToggle[target.id].selected = false;
                 targetSection.style.display = "none";
             } else {
                 target.style.color = auxToggle[target.id].color;
-                target.style = `border-right: solid 2px ${auxToggle[target.id].color}; padding-right: 4px;`;
+                target.style = `border-right: solid 2px ${auxToggle[target.id].color}; padding-right: 4px; color: white;`;
                 auxToggle[target.id].selected = true;
                 targetSection.style.display = "block";
                 targetSection.style.borderColor = auxToggle[target.id].color;
             }
         }
+    
 
         menu.onclick = (event) => {
             if (event.target.id != 'menu') {
@@ -159,12 +162,34 @@ window.onload = () => {
 
     // https://www.w3schools.com/jsref/jsref_tofixed.asp
     function lineHeightListener() {
-
+        
     }
 
+    // https://www.w3schools.com/css/css_font.asp
+    // https://www.w3schools.com/tags/tag_select.asp
     function fontTypeListener() {
-
+        const selectFont = document.getElementById('select-font-family');
+        fonts.forEach((font) => {
+            const option = document.createElement('option');
+            option.value = font.name;
+            option.innerText = font.name;
+            selectFont.appendChild(option);
+        })
     }
 }
 
-
+let fonts = [
+    { family: 'serif', name: 'Times New Roman' },
+    { family: 'serif', name: 'Georgia' },
+    { family: 'serif', name: 'Garamond' },
+    { family: 'sans-serif', name: 'Arial' },
+    { family: 'sans-serif', name: 'Verdana' },
+    { family: 'sans-serif', name: 'Helvetica' },
+    { family: 'monospace', name: 'Courier New' },
+    { family: 'monospace', name: 'Lucida Console' },
+    { family: 'monospace', name: 'Monaco' },
+    { family: 'cursive', name: 'Brush Script MT' },
+    { family: 'cursive', name: 'Lucida Handwriting' },
+    { family: 'fantasy', name: 'Copperplate' },
+    { family: 'fantasy', name: 'Papyrus' },
+]
