@@ -81,6 +81,7 @@ buttonFriday.onclick = () => {
     })
 }
 
+// Contribuição do Douglas
 // Exercício 06
 function dayZoom() {
   
@@ -98,6 +99,9 @@ function dayZoom() {
   }
 
 }
+
+// Exercício 07
+
 
 function init() {
   createDaysOfTheWeek();
