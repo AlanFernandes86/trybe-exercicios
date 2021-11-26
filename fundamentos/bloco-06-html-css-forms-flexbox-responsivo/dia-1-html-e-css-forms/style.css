@@ -11,6 +11,7 @@ main {
 
 fieldset {
   padding: 16px;
+  margin-bottom: 20px;
 }
 
 input[type="text"] {

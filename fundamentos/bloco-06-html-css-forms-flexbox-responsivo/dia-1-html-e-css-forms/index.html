@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,6 +56,25 @@
               value="apartamento"
             />
             <label for="apartamento" class="radio-label">Apartamento</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Seu último emprego</legend>
+          <div class="row">
+            <label for="resumo">Resumo</label>
+            <textarea name="resumo" id="resumo" cols="30" rows="10" max="1000" required></textarea>
+          </div>
+          <div class="row">
+            <label for="cargo">Cargo:</label>
+            <input type="text" name="cargo" id="cargo" max="40" required />
+          </div>
+          <div class="row">
+            <label for="descricao">Descrição do cargo:</label>
+            <input type="text" name="descricao" id="descricao" max="40" required />
+          </div>
+          <div class="row">
+            <label for="data-inicio">Data de início:</label>
+            <input type="text" name="data-inicio" id="data-inicio" placeholder="dd/mm/aaaa" required />
           </div>
         </fieldset>
       </form>
