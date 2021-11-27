@@ -9,6 +9,7 @@ const ulDays = document.getElementById("days");
 const buttonsContainer = document.querySelector('.buttons-container');
 const buttonHoliday = document.createElement('button');
 const buttonFriday = document.createElement('button');
+const tanks = document.querySelector('.my-tasks');
 
 init();
 
@@ -101,7 +102,11 @@ function dayZoom() {
 }
 
 // Exercício 07
-
+function createTask(tarefa) {
+  let task = document.createElement('span');
+  task.innerText = tarefa;
+  tasks.appendChild(task);
+}
 
 function init() {
   createDaysOfTheWeek();
