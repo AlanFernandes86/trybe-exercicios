@@ -34,5 +34,13 @@ input[type="text"] {
   margin-bottom: 0px;
 }
 
+.row button[type="submit"] {
+  padding: 8px;
+}
+
+.align-right {
+  text-align: right;
+}
+
 
 
