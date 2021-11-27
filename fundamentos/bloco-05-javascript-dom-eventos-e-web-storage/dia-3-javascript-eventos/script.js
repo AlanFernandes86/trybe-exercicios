@@ -108,6 +108,16 @@ function createTask(tarefa) {
   tasks.appendChild(task);
 }
 
+// Exercício 08
+function createTask(cor) {
+  let legend = document.createElement('div');
+  legend.backgroundColor = cor;
+  legend.classList.add('task');
+  tasks.appendChild(legend);
+}
+
+
+
 function init() {
   createDaysOfTheWeek();
   insertDays();
