@@ -10,6 +10,9 @@ const buttonsContainer = document.querySelector('.buttons-container');
 const buttonHoliday = document.createElement('button');
 const buttonFriday = document.createElement('button');
 const tasks = document.querySelector('.my-tasks');
+const taskInput = document.getElementById('task-input');
+const btnAdd = document.getElementById('btn-add');
+const taskList = document.querySelector('.task-list');
 
 init();
 
@@ -153,6 +156,28 @@ ulDays.onclick = (event) => {
     console.log('new');
     event.target.style.color = selectedColor;
   }
+}
+
+// Exercício bonus
+function insertAppointment() {
+  const inputValue = taskInput.value;
+  if (inputValue !== '') {
+    const li = document.createElement('li');
+    li.innerText = inputValue;
+    taskList.appendChild(li);
+  } else {
+    alert('Digite seu compromisso!');
+  }
+}
+
+taskInput.addEventListener('keypress', (event) => {
+  if (event.key === "Enter") {
+    insertAppointment();
+  }
+});
+
+btnAdd.onclick = (event) => {
+  insertAppointment();
 }
 
 function init() {
