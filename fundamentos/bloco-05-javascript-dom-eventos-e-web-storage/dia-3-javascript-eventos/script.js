@@ -4,12 +4,12 @@ const dezDaysList = [
   21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
 ];
 const holiday = [24, 25, 31];
-const friday = [4, 11, 18, 25];
+const fridayNum = [4, 11, 18, 25];
 const ulDays = document.getElementById("days");
 const buttonsContainer = document.querySelector('.buttons-container');
 const buttonHoliday = document.createElement('button');
 const buttonFriday = document.createElement('button');
-const tanks = document.querySelector('.my-tasks');
+const tasks = document.querySelector('.my-tasks');
 
 init();
 
@@ -44,7 +44,7 @@ function insertDays() {
     if (holiday.find((element) => element === day)) {
       li.className += " holiday";
     }
-    if (friday.find((element) => element === day)) {
+    if (fridayNum.find((element) => element === day)) {
       li.className += " friday";
     }
     ulDays.appendChild(li);
@@ -77,15 +77,19 @@ function createButtonFriday(sexta) {
 // Exercício 05
 buttonFriday.onclick = () => {
     let fridays = document.querySelectorAll('.friday');
-    fridays.forEach((friday) => {
-      friday.innerText = 'Sexta-feira';
+    fridays.forEach((friday, index) => {
+      if (fridays[index].innerText === 'Sexta-feira') {
+        friday.innerText = fridayNum[index];
+      } else {
+        friday.innerText = 'Sexta-feira';
+      }      
     })
 }
 
 // Contribuição do Douglas
 // Exercício 06
 function dayZoom() {
-  
+
   ulDays.onmouseover = (event) => {
     if (event.target.id !== "days") {
       event.target.style.fontSize = '30px';
@@ -105,18 +109,51 @@ function dayZoom() {
 function createTask(tarefa) {
   let task = document.createElement('span');
   task.innerText = tarefa;
+  if (tasks.children.length > 1) tasks.appendChild(document.createElement('br'));
   tasks.appendChild(task);
 }
 
 // Exercício 08
-function createTask(cor) {
+function addTaskColor(cor) {
   let legend = document.createElement('div');
-  legend.backgroundColor = cor;
+  legend.style.backgroundColor = cor;
   legend.classList.add('task');
   tasks.appendChild(legend);
 }
 
+// Exercício 09
+// https://www.w3schools.com/jsref/prop_element_classlist.asp
+tasks.onclick = (event) => {
+  console.dir(event.target)
+  const task = tasks.children;
+  for (let i = 0; i < task.length; i += 1) {
+    if (task[i].classList.contains('selected')) {
+      task[i].classList.remove('selected');
+    }
+  }
+  if (!event.target.classList.contains('my-tasks') && event.target.localName === 'div'){
+    event.target.classList.add('selected');
+  }
+}
 
+// Exercício 10
+// getComputedStyle sempre retorna a cor em rgb!
+ulDays.onclick = (event) => {
+  const selected = document.querySelector('.selected');
+  const selectedColor = window.getComputedStyle(selected).backgroundColor;
+  const actualColor = window.getComputedStyle(event.target).color;
+  console.log(`${selectedColor} - ${actualColor}`)
+  if (
+    event.target.id !== "days" 
+    && actualColor !== 'rgb(119, 119, 119)'
+    && actualColor === selectedColor) {
+    event.target.style.color = 'rgb(119, 119, 119)';
+    console.log('remove');
+  } else if (event.target.id !== "days") {
+    console.log('new');
+    event.target.style.color = selectedColor;
+  }
+}
 
 function init() {
   createDaysOfTheWeek();
@@ -124,6 +161,10 @@ function init() {
   createButtonHoliday('Feriados');
   createButtonFriday('Sexta-feira');
   dayZoom();
+  createTask('Projeto:');
+  addTaskColor('green');
+  createTask('Soft-Skills:');
+  addTaskColor('blue');
 }
 
 
