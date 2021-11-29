@@ -9,6 +9,7 @@
   </head>
   <body>
     <main>
+      <!-- https://www.alura.com.br/artigos/formatando-cpf-com-ajuda-das-expressoes-regulares?gclid=Cj0KCQiA7oyNBhDiARIsADtGRZbih-FhV3m_yrotvIRwv-0Dd_yLfpKJbCTF2dj1_GVu2bZxbJRYqe4aAuhrEALw_wcB -->
       <form action="" method="get">
         <fieldset>
           <legend>Currículo Profissional</legend>
@@ -24,7 +25,7 @@
 
           <div class="row">
             <label for="cpf">CPF:</label>
-            <input type="text" name="cpf" id="cpf" max="11" required />
+            <input type="text" name="cpf" id="cpf" max="11" pattern="[0-9]{11}" required />
           </div>
 
           <div class="row">
