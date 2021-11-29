@@ -49,12 +49,11 @@ __Bloco 05: JavaScript: DOM, Eventos e Web Storage__
 05.01: JavaScript - DOM e seletores  ![OK][url-badge-feito]  
 05.02: JavaScript - Trabalhando com elementos  ![OK][url-badge-feito]  
 [05.03: JavaScript - Eventos](https://alanfernandes86.github.io/exercicios/bloco-5-javascript-eventos/)  ![OK][url-badge-feito]  
-[05.04: JavaScript - Web Storage](https://alanfernandes86.github.io/exercicios/bloco-5-javascript-web-storage/)  ![OK][url-badge-pendente]  
-05.05: Fundamentos - JavaScript - Projetos  ![OK][url-badge-pendente]
-[05.06: Projeto - Pixels art](https://alanfernandes86.github.io/projetos/pixels-art/)  ![OK][url-badge-feito]  
+[05.04: JavaScript - Web Storage](https://alanfernandes86.github.io/exercicios/bloco-5-javascript-web-storage/)   ![OK][url-badge-feito]  
+[05.05: Projeto - Pixels art](https://alanfernandes86.github.io/projetos/pixels-art/)   ![OK][url-badge-feito]  
 [05.06: Projeto - Lista de tarefas](https://alanfernandes86.github.io/projetos/todo-list/)  ![OK][url-badge-feito]  
 05.07: (Bônus) Projeto - Meme Generator  ![NOK][url-badge-pendente]  
-[05.07: (Bônus) Projeto - Adivinhe a Cor](https://alanfernandes86.github.io/projetos/color-guess/)  ![OK][url-badge-pendente]  
+[05.07: (Bônus) Projeto - Adivinhe a Cor](https://alanfernandes86.github.io/projetos/color-guess/)  ![OK][url-badge-feito]  
 05.07: (Bônus) Projeto - Carta Misteriosa  ![NOK][url-badge-pendente]  
 
 __Bloco 06: HTML e CSS: Forms, Flexbox e Responsivo__  
