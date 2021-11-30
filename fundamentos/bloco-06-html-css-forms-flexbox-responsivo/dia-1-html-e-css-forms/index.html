@@ -15,17 +15,17 @@
           <legend>Currículo Profissional</legend>
           <div class="row">
             <label for="name">Nome:</label>
-            <input type="text" name="name" id="name" max="40" />
+            <input type="text" name="name" id="name" max="40" required />
           </div>
 
           <div class="row">
             <label for="e-mail">E-mail:</label>
-            <input type="text" name="e-mail" id="e-mail" max="50" />
+            <input type="text" name="e-mail" id="e-mail" max="50" required />
           </div>
 
           <div class="row">
             <label for="cpf">CPF:</label>
-            <input type="text" name="cpf" id="cpf" max="11" />
+            <input type="text" name="cpf" id="cpf" max="11" required />
           </div>
 
           <div class="row">
@@ -35,13 +35,13 @@
               name="endereco"
               id="endereco"
               max="200"
-            
+              required
             />
           </div>
 
           <div class="row">
             <label for="cidade">Cidade:</label>
-            <input type="text" name="cidade" id="cidade" max="28" />
+            <input type="text" name="cidade" id="cidade" max="28" required />
           </div>
           <div class="row">
             <label for="estados">Estado:</label>
@@ -63,29 +63,23 @@
         <fieldset>
           <legend>Seu último emprego</legend>
           <div class="row">
-            <label for="resumo">Resumo</label>
+            <label for="resumo">Resumo:</label>
             <textarea
               name="resumo"
               id="resumo"
               cols="30"
               rows="10"
               max="1000"
-            
+              required
             ></textarea>
           </div>
           <div class="row">
             <label for="cargo">Cargo:</label>
-            <input type="text" name="cargo" id="cargo" max="40" />
+            <input type="text" name="cargo" id="cargo" max="40" required />
           </div>
           <div class="row">
             <label for="descricao">Descrição do cargo:</label>
-            <input
-              type="text"
-              name="descricao"
-              id="descricao"
-              max="40"
-            
-            />
+            <input type="text" name="descricao" id="descricao" max="40" />
           </div>
           <div class="row">
             <label for="data-inicio">Data de início:</label>
@@ -94,11 +88,11 @@
               name="data-inicio"
               id="data-inicio"
               placeholder="dd/mm/aaaa"
-            
+              required
             />
           </div>
         </fieldset>
-      
+
         <div class="row align-right">
           <button type="submit" id="enviar">Enviar</button>
         </div>

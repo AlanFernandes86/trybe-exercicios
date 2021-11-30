@@ -5,27 +5,19 @@ const cpf = document.getElementById('cpf');
 enviar.onclick = (event) => {
   //event.preventDefault();
 
-  if (!validaData(dataDeInicio.value)) {
+  if (validaData(dataDeInicio.value)) {
     dataDeInicio.setCustomValidity('Data inválida!');
+  } else {
+    dataDeInicio.setCustomValidity('');
   }
+
+  if (validaCPF(cpf.value)) {
+    cpf.setCustomValidity('CPF inválido!');
+  } else {
+    cpf.setCustomValidity('');
+  }
+
 };
-
-
-function validaData(data) {
-  const dataSplit = data;
-  const regex = /\d+/g
-  const a = dataSplit.match(regex)
-  
-  if (a[0] < 0 || a[0] > 31) {
-    return false;
-  } else if (a[1] < 0 || a[1] > 12 ) {
-    return false;
-  } else if (a[2] < 0) {
-    return false;
-  }
-
-  return true;
-}
 
 cpf.onkeyup = (event) => {
   formataCPF(event.target.value);
@@ -34,30 +26,78 @@ cpf.onkeyup = (event) => {
 function formataCPF(value) {
   const cpfAtual = value;
   let cpfAtualizado;
-  cpfAtualizado = cpfAtual.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, 
-  function (reg, argumento1, argumento2, argumento3, argumento4) {
-   // console.log(reg);
-     return (argumento1 + '.' + argumento2 + '.' + argumento3 + '-' + argumento4);
+  cpfAtualizado = cpfAtual.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/,
+    function (reg, argumento1, argumento2, argumento3, argumento4) {
+      // console.log(reg);
+      return (
+        argumento1 + '.' + argumento2 + '.' + argumento3 + '-' + argumento4
+      );
     }
   );
   //console.log(cpfAtualizado);
   cpf.value = cpfAtualizado;
-}
+};
 
 cpf.onblur = (event) => {
-    const cpf = event.target.value;
-    const regex = /\d/g;
-    const result = cpf.match(regex);
-    const regexLetter = /[a-zA-Z]/
-    const result2 = regexLetter.test(cpf)
-    console.log(result2);
-    console.log(result);
-    if(result.length <= 11 && !result2) {
-      
-    } else {
-      alert('CPF inválido');
-    }
+  const cpf = event.target.value;
+  if(validaCPF(cpf)){
+    alert('CPF inválido!');
+  };
+};
+
+function validaCPF(cpf) {
+  const regexCPF = /\d/g;
+  const result = cpf.match(regexCPF);
+  const regexLetter = /[a-zA-Z]/;
+  const result2 = regexLetter.test(cpf);
+  /* console.log(result); console.log(result2); */
+  if (result == null || result.length > 11 || result2) {
+    return true;
+  }
+  return false;
 }
+
+dataDeInicio.onkeyup = (event) => {
+  formataData(event.target.value);
+}
+
+function formataData(value) {
+  const dataAtual = value;
+  let dataAtualizada;
+  dataAtualizada = dataAtual.replace(/(\d{2})(\d{2})(\d{4})/,
+    function (reg, argumento1, argumento2, argumento3) {
+      // console.log(reg);
+      return (
+        argumento1 + '/' + argumento2 + '/' + argumento3
+      );
+    }
+  );
+  //console.log(cpfAtualizado);
+  dataDeInicio.value = dataAtualizada;
+}
+
+function validaData(data) {
+  const regexData = /\d+/g;
+  const regexFormato = /\d{2}\/\d{2}\/\d{4}$/;
+  const a = data.match(regexData);
+  /* console.log(a);
+  console.log(regexFormato.test(data)); */
+
+  if (!regexFormato.test(data) || data === '') {
+    return true;
+  } else if (a[0] < 0 || a[0] > 31) {
+    return true;
+  } else if (a[1] < 0 || a[1] > 12) {
+    return true;
+  } else if (a[2] < 0) {
+    return true;
+  }
+
+  return false;
+}
+
+
+
 /* 
 Fonte:
 https://stackoverflow.com/questions/10777970/can-i-mark-a-field-invalid-from-javascript 
