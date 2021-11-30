@@ -3,7 +3,7 @@ const dataDeInicio = document.getElementById('data-inicio');
 const cpf = document.getElementById('cpf');
 
 enviar.onclick = (event) => {
-  //event.preventDefault();
+  event.preventDefault();
 
   if (validaData(dataDeInicio.value)) {
     dataDeInicio.setCustomValidity('Data inválida!');
@@ -96,9 +96,9 @@ function validaData(data) {
   return false;
 }
 
-
-
 /* 
-Fonte:
+Fontes:
 https://stackoverflow.com/questions/10777970/can-i-mark-a-field-invalid-from-javascript 
+https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#regular-expressions
+https://stackoverflow.com/questions/17550317/how-to-manually-show-a-html5-validation-message-from-a-javascript-function
 */
