@@ -1,0 +1,23 @@
+body {
+ padding: 8px;
+}
+h1 {
+  font-size: 1.5em;
+  text-align: center;
+}
+h2 {
+
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+.before-main p {
+  font-size: 1.5em;
+  text-align: justify;
+}
