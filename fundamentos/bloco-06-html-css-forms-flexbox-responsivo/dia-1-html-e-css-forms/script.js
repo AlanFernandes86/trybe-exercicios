@@ -1,6 +1,7 @@
 const enviar = document.getElementById('enviar');
 const dataDeInicio = document.getElementById('data-inicio');
 const cpf = document.getElementById('cpf');
+const form = document.getElementsByTagName('form')[0];
 
 enviar.onclick = (event) => {
   event.preventDefault();
@@ -17,6 +18,12 @@ enviar.onclick = (event) => {
     cpf.setCustomValidity('');
   }
 
+  if (form.checkValidity()) {
+    form.submit();
+  } else {
+    form.reportValidity();
+  }
+  
 };
 
 cpf.onkeyup = (event) => {
@@ -94,6 +101,10 @@ function validaData(data) {
   }
 
   return false;
+}
+
+enviar.ondblclick = (event) => {
+
 }
 
 /* 
