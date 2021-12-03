@@ -1,20 +1,19 @@
 body {
- margin: 16px;
+  margin: 16px;
 }
 h1 {
   font-size: 1.5em;
   text-align: center;
 }
 h2 {
-
 }
 
 img {
-    width: 100%;
+  max-width: 100%;
 }
 
 figure {
-    margin: 0 0 24px 0;
+  margin: 0 0 24px 0;
 }
 
 .before-main p {
@@ -54,7 +53,6 @@ figure {
     margin: 48px auto;
     max-width: 1200px;
   }
-
 
   h1 {
     font-size: 2.5em;

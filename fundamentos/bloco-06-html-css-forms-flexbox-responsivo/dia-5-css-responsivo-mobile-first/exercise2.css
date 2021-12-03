@@ -1,0 +1,78 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+@media screen and (max-width: 360px) {
+
+  h1 {
+    margin: 0px;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: yellow;
+    padding: 16px;
+    align-items: center;
+  }
+
+  .header-container i {
+    font-size: 25px;
+    color: yellowgreen;
+  }
+
+  nav {
+    float: right;
+    text-align: right;
+    margin: -10px 16px 0;
+    line-height: 30px;
+    font-weight: 800;
+    font-size: 18px;
+  }
+
+  nav ul {
+    list-style: none;
+    border-radius: 20px 0 20px 0;
+  }
+
+  nav ul li {
+    color: yellow;
+    padding: 8px;
+    border: 1px solid white;
+    background-color: yellowgreen;
+  }
+
+  nav ul li:first-of-type {
+    border-radius: 20px 0 0 0;
+  }
+
+  nav ul li:last-of-type {
+    border-radius: 0 0 20px 0;
+  }
+
+  nav ul li:active{
+    opacity: 0.8;
+  }
+
+  .invisible {
+    display: none;
+  }
+
+  aside , .main-content, footer {
+    padding: 16px;
+    text-align: justify;
+  }
+
+  aside ul {
+    list-style: none;
+  }
+    
+}
+
