@@ -47,3 +47,21 @@ console.log(getObjectValues(lesson2));
 const allLessons = Object.assign({}, { lesson1 }, { lesson2 }, { lesson3 });
 
 console.log(allLessons);
+
+function getAllStudents(allLessons) {
+  const lessons = Object.keys(allLessons);
+  let sumStudents = 0;
+  lessons.forEach((lesson) => {
+    sumStudents += allLessons[lesson].numeroEstudantes;
+  });
+  return sumStudents;
+}
+
+console.log(getAllStudents(allLessons));
+
+function getKeyAtPosition(object, position) {
+  const lessons = Object.keys(object);
+  return lessons[position];
+}
+
+console.log(getKeyAtPosition(lesson2, 2));
