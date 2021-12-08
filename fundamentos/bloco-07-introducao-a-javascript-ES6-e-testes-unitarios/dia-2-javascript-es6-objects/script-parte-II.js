@@ -65,3 +65,16 @@ function getKeyAtPosition(object, position) {
 }
 
 console.log(getKeyAtPosition(lesson2, 2));
+
+function hasKeyAndValue(object, key, value) {
+  let result = false;
+  Object.entries(object).forEach(([k, v]) => {
+    if(key === k && value === v) result = true;
+  });
+  return result;
+}
+
+console.log(hasKeyAndValue(lesson3, 'turno', 'noite'));
+// Output: true,
+console.log(hasKeyAndValue(lesson3, 'materia', 'Maria Clara'));
+// Output: false
