@@ -1,0 +1,68 @@
+.my-header {
+  margin: 3rem 0 1rem;
+}
+
+.row-margin-bottom {
+  margin: 3rem;
+}
+
+.row-align-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 65%;
+  margin: 40px auto;
+}
+
+fieldset {
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 4px;
+  margin-top: 4px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+textarea {
+  width: 100%;
+}
+
+.radio-label {
+  margin-right: 8px;
+}
+
+.row {
+  margin-bottom: 16px;
+}
+
+.row:last-of-type {
+  margin-bottom: 0px;
+}
+
+.row button {
+  padding: 8px;
+}
+
+.align-right {
+  text-align: right;
+} */
+
+
+

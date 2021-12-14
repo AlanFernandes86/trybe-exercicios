@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS - Forms</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+    />
+    <link rel="stylesheet" href="style.css"/>
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"
+    defer
+    ></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"
+    defer
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="ui container my-header">
+      <h1 class="ui header">Currículo Profissional</div>
+    </header>
+    <main class="ui container segment">
+      
+      <form action="" method="get" class="ui form">
+        <div class="segment container ui">
+        <div class="field">
+          <label for="name">Nome:</label>
+          <input type="text" name="name" id="name" max="40" required />
+        </div>
+
+        <div class="field">
+          <label for="e-mail">E-mail:</label>
+          <input type="text" name="e-mail" id="e-mail" max="50" required />
+        </div>
+
+        <div class="field">
+          <label for="cpf">CPF:</label>
+          <input type="text" name="cpf" id="cpf" max="11" required />
+        </div>
+
+        <div class="field">
+          <label for="endereco">Endereço:</label>
+          <input type="text" name="endereco" id="endereco" max="200" required />
+        </div>
+
+        <div class="field">
+          <label for="cidade">Cidade:</label>
+          <input type="text" name="cidade" id="cidade" max="28" required />
+        </div>
+        <div class="field">
+          <label for="estados">Estado:</label>
+          <select
+            name="estados"
+            id="estados"
+            class="ui search dropdown"
+          ></select>
+        </div>
+        <div class="inline fields">
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input
+                type="radio"
+                name="tipo-residencia"
+                id="casa"
+                value="casa"
+              />
+              <label for="casa" class="radio-label">Casa</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input
+                type="radio"
+                name="tipo-residencia"
+                id="apartamento"
+                value="apartamento"
+              />
+              <label for="apartamento" class="radio-label">Apartamento</label>
+            </div>
+          </div>
+        </div>
+        <div class="inline fields">
+          <div class="field">
+            <div class="ui checkbox">
+              <input
+                type="checkbox"
+                name="rede-social"
+                id="linkedin"
+                value="linkedin"
+              />
+              <label for="linkedin">Linkedin</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui checkbox">
+              <input
+                type="checkbox"
+                name="rede-social"
+                id="instagram"
+                value="instagram"
+              />
+              <label for="instagram">Instagram</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui checkbox">
+              <input
+                type="checkbox"
+                name="rede-social"
+                id="twitter"
+                value="twitter"
+              />
+              <label for="twitter">Twitter</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui container segment">
+        <h2 class="ui header">Seu último emprego</h2>
+        <div class="field">
+          <label for="resumo">Resumo:</label>
+          <textarea
+            name="resumo"
+            id="resumo"
+            cols="30"
+            rows="10"
+            max="1000"
+            required
+          ></textarea>
+        </div>
+        <div class="field">
+          <label for="cargo">Cargo:</label>
+          <input type="text" name="cargo" id="cargo" max="40" required />
+        </div>
+        <div class="field">
+          <label for="descricao">Descrição do cargo:</label>
+          <input type="text" name="descricao" id="descricao" max="40" />
+        </div>
+        <div class="field">
+          <label for="data-inicio">Data de início:</label>
+          <input
+            type="text"
+            name="data-inicio"
+            id="data-inicio"
+            placeholder="dd/mm/aaaa"
+            required
+          />
+        </div>
+
+      </div>
+      <div class="row-align-right">
+        <button
+          type="button"
+          id="sample-data"
+          value="sample"
+          class="ui secondary button"
+        >
+          Sample data
+        </button>
+        <button type="reset" id="reset" class="ui button">Limpar</button>
+        <button type="submit" id="enviar" class="ui primary button">
+          Enviar
+        </button>
+      </div>
+      </form>
+      <section id="summary" hidden>
+        <button id="voltar" class="ui button">Voltar</button>
+      </section>
+    </main>
+    <footer class="ui container footer">Alan - Fernandes | Dez / 2021</footer>
+  </body>
+</html>
