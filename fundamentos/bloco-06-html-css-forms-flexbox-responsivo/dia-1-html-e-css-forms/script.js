@@ -4,6 +4,7 @@ const cpf = document.getElementById('cpf');
 const form = document.forms[0];
 const summary = document.querySelector('#summary');
 const btnSample = document.getElementById('sample-data');
+const btnEnviar = document.getElementById('enviar');
 const selectEstados = document.getElementById('estados');
 const uf = ['AC', 'AL', 'AM', 'AP', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MG', 'MS', 'MT', 'NY', 'PA', 'PB', 'PE', 'PI', 'PR', 'RJ', 'RN', 'RO', 'RR', 'RS', 'SC', 'SE', 'SP', 'TO'];
 
@@ -17,9 +18,9 @@ window.onload = () => {
 }
 
 // https://developer.mozilla.org/en-US/docs/Web/API/FormData/Using_FormData_Objects
-form.onsubmit = (event) => {
+btnEnviar.onclick = (event) => {
   event.preventDefault();
-   
+  
   if (validaData(dataDeInicio.value)) {
     dataDeInicio.setCustomValidity('Data inválida!');
   } else {
