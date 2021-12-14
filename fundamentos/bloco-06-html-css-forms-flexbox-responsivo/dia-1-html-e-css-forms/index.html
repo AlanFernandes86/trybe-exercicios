@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML & CSS - Forms</title>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <main>
@@ -58,6 +59,29 @@
             />
             <label for="apartamento" class="radio-label">Apartamento</label>
           </div>
+          <div class="row">
+            <input
+              type="checkbox"
+              name="rede-social"
+              id="linkedin"
+              value="linkedin"
+            />
+            <label for="linkedin" class="radio-label">Linkedin</label>
+            <input
+              type="checkbox"
+              name="rede-social"
+              id="instagram"
+              value="instagram"
+            />
+            <label for="instagram" class="radio-label">Instagram</label>
+            <input
+              type="checkbox"
+              name="rede-social"
+              id="twitter"
+              value="twitter"
+            />
+            <label for="twitter" class="radio-label">Twitter</label>
+          </div>
         </fieldset>
 
         <fieldset>
@@ -94,10 +118,14 @@
         </fieldset>
 
         <div class="row align-right">
+          <button type="button" id="sample-data" value="sample">Sample data</button>
+          <button type="reset" id="reset">Limpar</button>
           <button type="submit" id="enviar">Enviar</button>
         </div>
       </form>
+      <section id="summary" hidden>
+        <button id="voltar">Voltar</button>
+      </section>
     </main>
-    <script src="script.js"></script>
   </body>
 </html>
