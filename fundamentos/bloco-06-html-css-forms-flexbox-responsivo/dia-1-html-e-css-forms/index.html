@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS - Forms</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <!-- https://www.alura.com.br/artigos/formatando-cpf-com-ajuda-das-expressoes-regulares?gclid=Cj0KCQiA7oyNBhDiARIsADtGRZbih-FhV3m_yrotvIRwv-0Dd_yLfpKJbCTF2dj1_GVu2bZxbJRYqe4aAuhrEALw_wcB -->
+      <form action="" method="get">
+        <fieldset>
+          <legend>Currículo Profissional</legend>
+          <div class="row">
+            <label for="name">Nome:</label>
+            <input type="text" name="name" id="name" max="40" required />
+          </div>
+
+          <div class="row">
+            <label for="e-mail">E-mail:</label>
+            <input type="text" name="e-mail" id="e-mail" max="50" required />
+          </div>
+
+          <div class="row">
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf" max="11" required />
+          </div>
+
+          <div class="row">
+            <label for="endereco">Endereço:</label>
+            <input
+              type="text"
+              name="endereco"
+              id="endereco"
+              max="200"
+              required
+            />
+          </div>
+
+          <div class="row">
+            <label for="cidade">Cidade:</label>
+            <input type="text" name="cidade" id="cidade" max="28" required />
+          </div>
+          <div class="row">
+            <label for="estados">Estado:</label>
+            <select name="estados" id="estados"></select>
+          </div>
+          <div class="row">
+            <input type="radio" name="tipo-residencia" id="casa" value="casa" />
+            <label for="casa" class="radio-label">Casa</label>
+            <input
+              type="radio"
+              name="tipo-residencia"
+              id="apartamento"
+              value="apartamento"
+            />
+            <label for="apartamento" class="radio-label">Apartamento</label>
+          </div>
+          <div class="row">
+            <input
+              type="checkbox"
+              name="rede-social"
+              id="linkedin"
+              value="linkedin"
+            />
+            <label for="linkedin" class="radio-label">Linkedin</label>
+            <input
+              type="checkbox"
+              name="rede-social"
+              id="instagram"
+              value="instagram"
+            />
+            <label for="instagram" class="radio-label">Instagram</label>
+            <input
+              type="checkbox"
+              name="rede-social"
+              id="twitter"
+              value="twitter"
+            />
+            <label for="twitter" class="radio-label">Twitter</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Seu último emprego</legend>
+          <div class="row">
+            <label for="resumo">Resumo:</label>
+            <textarea
+              name="resumo"
+              id="resumo"
+              cols="30"
+              rows="10"
+              max="1000"
+              required
+            ></textarea>
+          </div>
+          <div class="row">
+            <label for="cargo">Cargo:</label>
+            <input type="text" name="cargo" id="cargo" max="40" required />
+          </div>
+          <div class="row">
+            <label for="descricao">Descrição do cargo:</label>
+            <input type="text" name="descricao" id="descricao" max="40" />
+          </div>
+          <div class="row">
+            <label for="data-inicio">Data de início:</label>
+            <input
+              type="text"
+              name="data-inicio"
+              id="data-inicio"
+              placeholder="dd/mm/aaaa"
+              required
+            />
+          </div>
+        </fieldset>
+
+        <div class="row align-right">
+          <button type="button" id="sample-data" value="sample">Sample data</button>
+          <button type="reset" id="reset">Limpar</button>
+          <button type="submit" id="enviar">Enviar</button>
+        </div>
+      </form>
+      <section id="summary" hidden>
+        <button id="voltar">Voltar</button>
+      </section>
+    </main>
+  </body>
+</html>
