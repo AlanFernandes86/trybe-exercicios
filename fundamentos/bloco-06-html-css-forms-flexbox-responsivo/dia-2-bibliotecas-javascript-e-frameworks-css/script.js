@@ -17,6 +17,8 @@ window.onload = () => {
   $('.ui.checkbox').checkbox();
   $('.ui.radio.checkbox').checkbox();
   $('#estados').dropdown();
+  $('#data-inicio').datepicker();
+  dataDeInicio.onchange = () => $('#data-inicio').datepicker("option", "dateFormat", 'dd/mm/yy');
 }
 
 // https://developer.mozilla.org/en-US/docs/Web/API/FormData/Using_FormData_Objects
@@ -211,6 +213,7 @@ function toggleVisibility() {
 
 /* 
 Fontes:
+https://jqueryui.com/datepicker/
 https://semantic-ui.com/
 https://stackoverflow.com/questions/10777970/can-i-mark-a-field-invalid-from-javascript 
 https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#regular-expressions
