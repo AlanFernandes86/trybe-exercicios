@@ -10,70 +10,119 @@ html {
   box-sizing: inherit;
 }
 
-@media screen and (max-width: 360px) {
+h1 {
+  margin: 0px;
+}
 
-  h1 {
-    margin: 0px;
-  }
+aside , .main-content, footer {
+  padding: 16px;
+  text-align: justify;
+}
 
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    background-color: yellow;
-    padding: 16px;
-    align-items: center;
+aside ul {
+  list-style: none;
+}
+
+header {
+  background-color: yellow;
+  padding: 16px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 540px) {
+
+  .invisible {
+    display: none;
   }
 
   .header-container i {
     font-size: 25px;
     color: yellowgreen;
   }
-
-  nav {
+  
+  .navigation {
     float: right;
     text-align: right;
-    margin: -10px 16px 0;
     line-height: 30px;
     font-weight: 800;
     font-size: 18px;
   }
-
-  nav ul {
+  
+  .navigation ul {
     list-style: none;
     border-radius: 20px 0 20px 0;
   }
-
-  nav ul li {
+  
+  .navigation ul li {
     color: yellow;
     padding: 8px;
     border: 1px solid white;
     background-color: yellowgreen;
   }
-
-  nav ul li:first-of-type {
+  
+  .navigation ul li:first-of-type {
     border-radius: 20px 0 0 0;
   }
-
-  nav ul li:last-of-type {
+  
+  .navigation ul li:last-of-type {
     border-radius: 0 0 20px 0;
   }
-
-  nav ul li:active{
+  
+  .navigation ul li:active{
     opacity: 0.8;
   }
+}
 
-  .invisible {
+@media screen and (min-width: 541px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-container i {
     display: none;
   }
 
-  aside , .main-content, footer {
-    padding: 16px;
-    text-align: justify;
-  }
-
-  aside ul {
+  .navigation ul {
     list-style: none;
   }
-    
+  
+  .navigation ul li {
+    display: inline-block;
+    color: white;
+    font-weight: 800;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 20px 0 20px 0;
+    background-color: yellowgreen;
+  }
+
+  .navigation ul li:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
 }
 
+@media screen and (min-width: 840px) {
+  
+  body {
+    max-width: 1040px;
+    margin: 0 auto;
+  }
+
+  .header-container p{
+    font-weight: 800;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+
+  .navigation ul li {
+    font-size: 20px;
+  }
+
+}
