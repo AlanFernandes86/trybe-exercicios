@@ -26,27 +26,27 @@
       <div class="segment container ui">
         <div class="field">
           <label for="name">Nome:</label>
-          <input type="text" name="name" id="name" max="40" required />
+          <input type="text" name="name" id="name" max="40" />
         </div>
 
         <div class="field">
           <label for="e-mail">E-mail:</label>
-          <input type="text" name="e-mail" id="e-mail" max="50" required />
+          <input type="text" name="e-mail" id="e-mail" max="50" />
         </div>
 
         <div class="field">
           <label for="cpf">CPF:</label>
-          <input type="text" name="cpf" id="cpf" max="11" required />
+          <input type="text" name="cpf" id="cpf" max="11" />
         </div>
 
         <div class="field">
           <label for="endereco">Endereço:</label>
-          <input type="text" name="endereco" id="endereco" max="200" required />
+          <input type="text" name="endereco" id="endereco" max="200" />
         </div>
 
         <div class="field">
           <label for="cidade">Cidade:</label>
-          <input type="text" name="cidade" id="cidade" max="28" required />
+          <input type="text" name="cidade" id="cidade" max="28" />
         </div>
         <div class="field">
           <label for="estados">Estado:</label>
@@ -91,11 +91,11 @@
         <h2 class="ui header">Seu último emprego</h2>
         <div class="field">
           <label for="resumo">Resumo:</label>
-          <textarea name="resumo" id="resumo" cols="30" rows="10" max="1000" required></textarea>
+          <textarea name="resumo" id="resumo" cols="30" rows="10" max="1000" ></textarea>
         </div>
         <div class="field">
           <label for="cargo">Cargo:</label>
-          <input type="text" name="cargo" id="cargo" max="40" required />
+          <input type="text" name="cargo" id="cargo" max="40" />
         </div>
         <div class="field">
           <label for="descricao">Descrição do cargo:</label>
@@ -103,7 +103,7 @@
         </div>
         <div class="field">
           <label for="data-inicio">Data de início:</label>
-          <input type="text" name="data-inicio" id="data-inicio" placeholder="dd/mm/aaaa" required />
+          <input type="text" name="data-inicio" id="data-inicio" placeholder="dd/mm/aaaa" />
         </div>
 
       </div>
@@ -116,6 +116,7 @@
           Enviar
         </button>
       </div>
+      <div class="ui error message"></div>
     </form>
     <section id="summary" hidden>
       <button id="voltar" class="ui button">Voltar</button>

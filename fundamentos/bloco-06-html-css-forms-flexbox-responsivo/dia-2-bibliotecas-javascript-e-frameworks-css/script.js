@@ -8,8 +8,16 @@ const selectEstados = document.getElementById('estados');
 const uf = ['AC', 'AL', 'AM', 'AP', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MG', 'MS', 'MT', 'NY', 'PA', 'PB', 'PE', 'PI', 'PR', 'RJ', 'RN', 'RO', 'RR', 'RS', 'SC', 'SE', 'SP', 'TO'];
 
 window.onload = () => {
+  initForm();
+}
+
+function initForm() {
+  let option = document.createElement('option');
+  option.value = '';
+  option.textContent = 'Lista de Estados';
+  selectEstados.appendChild(option);
   uf.forEach((estado) => {
-    const option = document.createElement('option');
+    option = document.createElement('option');
     option.value = estado;
     option.textContent = estado;
     selectEstados.appendChild(option);
@@ -19,29 +27,15 @@ window.onload = () => {
   $('#estados').dropdown();
   $('#data-inicio').datepicker();
   dataDeInicio.onchange = () => $('#data-inicio').datepicker("option", "dateFormat", 'dd/mm/yy');
+  formValidation();
 }
 
 // https://developer.mozilla.org/en-US/docs/Web/API/FormData/Using_FormData_Objects
 form.onsubmit = (event) => {
   event.preventDefault();
-   
-  if (validaData(dataDeInicio.value)) {
-    dataDeInicio.setCustomValidity('Data inválida!');
-  } else {
-    dataDeInicio.setCustomValidity('');
+  if( $('.ui.form').form('is valid')) {
+    new FormData(form);
   }
-
-  if (validaCPF(cpf.value)) {
-    cpf.setCustomValidity('CPF inválido!');
-  } else {
-    cpf.setCustomValidity('');
-  }
-
-  if (form.checkValidity()) {
-    new FormData(form);  
-  } else {
-    form.reportValidity();
-  }  
 };
 
 // https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/formdata_event
@@ -92,7 +86,7 @@ cpf.onblur = (event) => {
 };
 
 function validaCPF(cpf) {
-  const regexCPF = /\d/g;
+  const regexCPF = /[0-9]{3}\.[0-9]{3}\.[0-9]{3}\-[0-9]{2}$/;
   const result = cpf.match(regexCPF);
   const regexLetter = /[a-zA-Z]/;
   const result2 = regexLetter.test(cpf);
@@ -103,44 +97,6 @@ function validaCPF(cpf) {
   return false;
 }
 
-dataDeInicio.onkeyup = (event) => {
-  formataData(event.target.value);
-}
-
-function formataData(value) {
-  const dataAtual = value;
-  let dataAtualizada;
-  dataAtualizada = dataAtual.replace(/(\d{2})(\d{2})(\d{4})/,
-    function (reg, argumento1, argumento2, argumento3) {
-      // console.log(reg);
-      return (
-        argumento1 + '/' + argumento2 + '/' + argumento3
-      );
-    }
-  );
-  //console.log(cpfAtualizado);
-  dataDeInicio.value = dataAtualizada;
-}
-
-function validaData(data) {
-  const regexData = /\d+/g;
-  const regexFormato = /\d{2}\/\d{2}\/\d{4}$/;
-  const a = data.match(regexData);
-  /* console.log(a);
-  console.log(regexFormato.test(data)); */
-
-  if (!regexFormato.test(data) || data === '') {
-    return true;
-  } else if (a[0] < 0 || a[0] > 31) {
-    return true;
-  } else if (a[1] < 0 || a[1] > 12) {
-    return true;
-  } else if (a[2] < 0) {
-    return true;
-  }
-
-  return false;
-}
 
 btnSample.onclick = () => {
   const formDataObject = {
@@ -209,6 +165,127 @@ function showForm() {
 function toggleVisibility() {
   form.hidden ? form.hidden = false : form.hidden = true;
   summary.hidden ? summary.hidden = false : summary.hidden = true;
+}
+
+function formValidation() {
+  $('.ui.form')
+  .form({
+    fields: {
+      name: {
+        identifier: 'name',
+        rules: [
+          {
+            type   : 'empty',
+            prompt : 'Por favor preencha seu nome.'
+          }
+        ]
+      },
+      'e-mail': {
+        identifier: 'e-mail',
+        rules: [
+          {
+            type   : 'empty',
+            prompt : 'Digite seu email.'
+          },
+          {
+            type   : 'email',
+            prompt : 'Digite um email válido.'
+          },
+        ]
+      },
+      cpf: {
+        identifier: 'cpf',
+        rules: [
+          {
+            type   : 'empty',
+            prompt : 'Digite seu CPF.'
+          }
+        ]
+      },
+      endereco: {
+        identifier: 'endereco',
+        rules: [
+          {
+            type   : 'empty',
+            prompt : 'Digite seu endereço.'
+          }
+        ]
+      },
+      cidade: {
+        identifier: 'cidade',
+        rules: [
+          {
+            type   : 'empty',
+            prompt : 'Digite a cidade do seu endereço.'
+          }
+        ]
+      },
+      estados: {
+        identifier: 'estados',
+        rules: [
+          {
+            type   : 'empty',
+            prompt : 'Selecione o estado da sua cidade.'
+          }
+        ]
+      },
+      'tipo-residencia': {
+        identifier: 'tipo-residencia',
+        rules: [
+          {
+            type   : 'checked',
+            prompt : 'Selecione o tipo da sua residência.'
+          }
+        ]
+      },
+      'rede-social': {
+        identifier: 'rede-social',
+        rules: [
+          {
+            type   : 'checked',
+            prompt : 'Selecione pelo menos uma rede social.'
+          }
+        ]
+      },
+      resumo: {
+        identifier: 'resumo',
+        rules: [
+          {
+            type   : 'empty',
+            prompt : 'Insira o resumo do seu último emprego.'
+          }
+        ]
+      },
+      cargo: {
+        identifier: 'cargo',
+        rules: [
+          {
+            type   : 'empty',
+            prompt : 'Insira o cargo do seu último emprego.'
+          }
+        ]
+      },
+      descricao: {
+        identifier: 'descricao',
+        rules: [
+          {
+            type   : 'empty',
+            prompt : 'Insira o descrição do seu último cargo.'
+          }
+        ]
+      },
+      'data-inicio': {
+        identifier: 'data-inicio',
+        rules: [
+          {
+            type   : 'empty',
+            prompt : 'Insira a data de início do seu último cargo.'
+          }
+        ]
+      },
+    }
+  })
+;
 }
 
 /* 
