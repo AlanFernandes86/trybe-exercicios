@@ -158,25 +158,21 @@ btnSample.onclick = () => {
   setFormData(formDataObject);
 };
 
+// https://stackoverflow.com/questions/13343566/set-select-option-selected-by-value
 function setFormData(formDataObject) {
-  for (let key in formDataObject) {
-    setInputData(key, formDataObject[key]);
-  }
-}
-
-function setInputData(id, value) {
-  const element = Object.values(form).find((element) => element.id === id);
-  if (element === undefined) {
-    if (Array.isArray(value)) {
-      value.forEach((value) => {
-        form.querySelector(`[value = ${value}]`).checked = true;
-      })
-    } else {
-      form.querySelector(`[value = ${value}]`).checked = true;
+  Object.values(form).forEach((element) => {
+    if (formDataObject[element.id]){
+      if (element.tagName === 'SELECT') {
+        $('#estados').val('NY').change();
+      } else {        
+        element.value = formDataObject[element.id];
+      }
+    } else if (element.type === 'checkbox' && formDataObject['rede-social'].includes(element.id)) {
+      element.checked = true;
+    } else if (element.type === 'radio' && formDataObject['tipo-residencia'] === element.id) {
+      element.checked = true;
     }
-  } else {
-    element.value = value;
-  }
+  });
 }
 
 function showSummary(formDataObject) {
