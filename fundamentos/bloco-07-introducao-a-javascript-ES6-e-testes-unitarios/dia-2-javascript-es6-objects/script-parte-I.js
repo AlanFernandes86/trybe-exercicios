@@ -1,51 +1,27 @@
-const order = {
-  name: 'Rafael Andrade',
-  phoneNumber: '11-98763-1416',
-  address: {
-    street: 'Rua das Flores',
-    number: '389',
-    apartment: '701',
-  },
-  order: {
-    pizza: {
-      marguerita: {
-        amount: 1,
-        price: 25,
-      },
-      pepperoni: {
-        amount: 1,
-        price: 20,
-      }
-    },
-    drinks: {
-      coke: {
-        type: 'Coca-Cola Zero',
-        price: 10,
-        amount: 1,
-      }
-    },
-    delivery: {
-      deliveryPerson: 'Ana Silveira',
-      price: 5,
-    }
-  },
-  payment: {
-    total: 60,
-  },
-};
+const value1 = document.getElementById('value1');
+const value2 = document.getElementById('value2');
+const button = document.getElementById('button');
+const htmlResult = document.getElementById('result');
 
-const customerInfo = (order) => {
-  // Adicione abaixo as informações necessárias.
-  return `Olá ${order.order.delivery.deliveryPerson}, entrega para: ${order.name}, Telefone: ${order.phoneNumber}, R. ${order.address.street}, Nº: ${order.address.number}, AP: ${order.address.apartment}.`;
-  /* "Olá Ana Silveira, entrega para: Rafael Andrade, Telefone: 11-98763-1416, R. Rua das Flores, Nº: 389, AP: 701". */
+button.addEventListener('click', executeSum);
+
+function sum() {
+  const result = parseInt(value1.value) + parseInt(value2.value);
+
+  if (isNaN(result)) {
+    throw Error('Digite somente números.');
+  }
+
+  htmlResult.textContent = `Resultado: ${result}`;
 }
 
-console.log(customerInfo(order));
-
-const orderModifier = (order) => {
-  // Adicione abaixo as informações necessárias.
-  return `Olá ${order.name}, o total do seu pedido de ${Object.keys(order.order.pizza)[0]}, ${Object.keys(order.order.pizza)[1]} e ${order.order.drinks.coke.type} é R$ ${order.payment.total},00.`;
-  /* "Olá Luiz Silva, o total do seu pedido de marguerita, pepperoni e Coca-Cola Zero é R$ 50,00." */
+function executeSum() {
+  try {
+    sum();
+  } catch (error) {
+    htmlResult.textContent = `Error: ${error.message}`
+  } finally {
+    document.getElementById('value1').value = '';
+    document.getElementById('value2').value = '';    
+  }
 }
-
-console.log(orderModifier(order));

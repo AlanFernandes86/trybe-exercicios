@@ -1,80 +1,51 @@
-const lesson1 = {
-  materia: 'Matemática',
-  numeroEstudantes: 20,
-  professor: 'Maria Clara',
-  turno: 'manhã',
+const order = {
+  name: 'Rafael Andrade',
+  phoneNumber: '11-98763-1416',
+  address: {
+    street: 'Rua das Flores',
+    number: '389',
+    apartment: '701',
+  },
+  order: {
+    pizza: {
+      marguerita: {
+        amount: 1,
+        price: 25,
+      },
+      pepperoni: {
+        amount: 1,
+        price: 20,
+      }
+    },
+    drinks: {
+      coke: {
+        type: 'Coca-Cola Zero',
+        price: 10,
+        amount: 1,
+      }
+    },
+    delivery: {
+      deliveryPerson: 'Ana Silveira',
+      price: 5,
+    }
+  },
+  payment: {
+    total: 60,
+  },
 };
 
-const lesson2 = {
-  materia: 'História',
-  numeroEstudantes: 20,
-  professor: 'Carlos',
-};
-
-const lesson3 = {
-  materia: 'Matemática',
-  numeroEstudantes: 10,
-  professor: 'Maria Clara',
-  turno: 'noite',
-};
-
-function insertEntry(object, key, value) {
-  object[key] = value;
+const customerInfo = (order) => {
+  // Adicione abaixo as informações necessárias.
+  return `Olá ${order.order.delivery.deliveryPerson}, entrega para: ${order.name}, Telefone: ${order.phoneNumber}, R. ${order.address.street}, Nº: ${order.address.number}, AP: ${order.address.apartment}.`;
+  /* "Olá Ana Silveira, entrega para: Rafael Andrade, Telefone: 11-98763-1416, R. Rua das Flores, Nº: 389, AP: 701". */
 }
 
-insertEntry(lesson2, 'turno', 'noite');
+console.log(customerInfo(order));
 
-console.log(lesson2);
-
-function listObjectKeys(object) {
-  return Object.keys(object);
+const orderModifier = (order) => {
+  // Adicione abaixo as informações necessárias.
+  return `Olá ${order.name}, o total do seu pedido de ${Object.keys(order.order.pizza)[0]}, ${Object.keys(order.order.pizza)[1]} e ${order.order.drinks.coke.type} é R$ ${order.payment.total},00.`;
+  /* "Olá Luiz Silva, o total do seu pedido de marguerita, pepperoni e Coca-Cola Zero é R$ 50,00." */
 }
 
-console.log(listObjectKeys(lesson2));
-
-function getObjectSize(object) {
-  return listObjectKeys(object).length;
-}
-
-console.log(getObjectSize(lesson2));
-
-function getObjectValues(object) {
-  return Object.values(lesson2);
-}
-
-console.log(getObjectValues(lesson2));
-
-const allLessons = Object.assign({}, { lesson1 }, { lesson2 }, { lesson3 });
-
-console.log(allLessons);
-
-function getAllStudents(allLessons) {
-  const lessons = Object.keys(allLessons);
-  let sumStudents = 0;
-  lessons.forEach((lesson) => {
-    sumStudents += allLessons[lesson].numeroEstudantes;
-  });
-  return sumStudents;
-}
-
-console.log(getAllStudents(allLessons));
-
-function getKeyAtPosition(object, position) {
-  const lessons = Object.keys(object);
-  return lessons[position];
-}
-
-console.log(getKeyAtPosition(lesson2, 2));
-
-function hasKeyAndValue(object, key, value) {
-  let result = false;
-  Object.entries(object).forEach(([k, v]) => {
-    if(key === k && value === v) result = true;
-  });
-  return result;
-}
-
-console.log(hasKeyAndValue(lesson3, 'turno', 'noite'));
-// Output: true,
-console.log(hasKeyAndValue(lesson3, 'materia', 'Maria Clara'));
-// Output: false
+console.log(orderModifier(order));
