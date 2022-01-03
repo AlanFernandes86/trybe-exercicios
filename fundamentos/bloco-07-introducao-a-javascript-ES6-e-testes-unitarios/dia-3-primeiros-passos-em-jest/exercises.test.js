@@ -1,5 +1,6 @@
 const sum = require('./sum');
 const myRemove = require('./my-remove');
+const myFizzBuzz = require('./my-fizz-buzz');
 
 describe('Exercício 01:', () => {
     it('1. sum(4, 5) return 9', () => {
@@ -29,5 +30,23 @@ describe('Exercício 02:', () => {
     });
     it('myRemove([1, 2, 3, 4], 3) returns [1, 2, 3, 4]', () => {
         expect(myRemove([1, 2, 3, 4], 5)).toStrictEqual([1, 2, 3, 4]);
+    });
+});
+
+describe('Exercício 03:', () => {
+    it('myFizzBuzz(15) return "fizzbuzz"', () => {
+        expect(myFizzBuzz(15)).toBe('fizzbuzz');
+    });
+    it('myFizzBuzz(9) return "fizz"', () => {
+        expect(myFizzBuzz(9)).toBe('fizz');
+    });
+    it('myFizzBuzz(10) return "buzz"', () => {
+        expect(myFizzBuzz(10)).toBe('buzz');
+    });
+    it('myFizzBuzz(7) return 7', () => {
+        expect(myFizzBuzz(7)).toBe(7);
+    });
+    it('myFizzBuzz("7") return false', () => {
+        expect(myFizzBuzz('7')).toBeFalsy();
     });
 });
