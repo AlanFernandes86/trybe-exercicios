@@ -1,6 +1,7 @@
 const sum = require('./sum');
 const myRemove = require('./my-remove');
 const myFizzBuzz = require('./my-fizz-buzz');
+const { encode, decode } = require('./encode-and-decode');
 
 describe('Exercício 01:', () => {
     it('1. sum(4, 5) return 9', () => {
@@ -48,5 +49,29 @@ describe('Exercício 03:', () => {
     });
     it('myFizzBuzz("7") return false', () => {
         expect(myFizzBuzz('7')).toBeFalsy();
+    });
+});
+
+describe('Exercício 04:', () => {
+    it('encode is a function', () => {
+        expect(typeof encode).toBe('function');
+    });
+    it('decode is a function', () => {
+        expect(typeof decode).toBe('function');
+    });
+    it('encode("aeiou") return "12345"', () => {
+        expect(encode('aeiou')).toBe('12345');
+    });
+    it('decode("12345") return "aeiou"', () => {
+        expect(decode('12345')).toBe('aeiou');
+    });
+    it('encode("bcdfghj") return "bcdfghj"', () => {
+        expect(encode('bcdfghj')).toBe('bcdfghj');
+    });
+    it('encode("Hello World").length equals 11', () => {
+        expect(encode('Hello World').length).toBe(11);
+    });
+    it('decode("H2ll4 W4rld").length equals 11', () => {
+        expect(decode('H2ll4 W4rld').length).toBe(11);
     });
 });
