@@ -2,6 +2,7 @@ const sum = require('./sum');
 const myRemove = require('./my-remove');
 const myFizzBuzz = require('./my-fizz-buzz');
 const { encode, decode } = require('./encode-and-decode');
+const techList = require('./techList');
 
 describe('Exercício 01:', () => {
     it('1. sum(4, 5) return 9', () => {
@@ -73,5 +74,41 @@ describe('Exercício 04:', () => {
     });
     it('decode("H2ll4 W4rld").length equals 11', () => {
         expect(decode('H2ll4 W4rld').length).toBe(11);
+    });
+});
+
+describe('Exercício 05 - Testa a função techList', () => {
+    it('Testa se a função techList é definida', () => {
+        expect(techList).toBeDefined();
+    });
+    it('Testa se techList é uma função', () => {
+        expect(typeof techList).toBe('function');
+    });
+    it('Lista com 5 tecnologias deve retornar uma lista de objetos ordenados', () => {
+        expect(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas')).toEqual([
+            {
+                tech: 'CSS',
+                name: 'Lucas'
+            },
+            {
+                tech: 'HTML',
+                name: 'Lucas'
+            },
+            {
+                tech: 'JavaScript',
+                name: 'Lucas'
+            },
+            {
+                tech: 'Jest',
+                name: 'Lucas'
+            },
+            {
+                tech: 'React',
+                name: 'Lucas'
+            }
+        ]);
+    });
+    it('Lista com 0 tecnologias deve retornar uma mensagem de erro "Vazio!"', () => {
+        expect(techList([], 'Lucas')).toBe('Vazio!');
     });
 });
