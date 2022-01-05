@@ -78,9 +78,6 @@ function averageAge() {
 }
 
 
-// 4 - Encontre o livro com o maior nome.
-
-
 const expectedResult = {
   id: 1,
   name: 'As Crônicas de Gelo e Fogo',
@@ -102,4 +99,10 @@ function longestNamedBook() {
   }, { nameLength: 0, book: {} }).book;
 }
 
-console.log(longestNamedBook());
+// Explicação do Douglas Marçal
+function longestNamedBook2() {
+  return books.reduce((acc, book) => book.name.length > acc.name.length ? book : acc);
+}
+
+
+console.log(longestNamedBook2());
