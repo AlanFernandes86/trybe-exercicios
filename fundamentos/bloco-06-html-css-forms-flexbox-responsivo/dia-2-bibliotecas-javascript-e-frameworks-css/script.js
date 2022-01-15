@@ -16,17 +16,23 @@ function initForm() {
   option.value = '';
   option.textContent = 'Lista de Estados';
   selectEstados.appendChild(option);
+
   uf.forEach((estado) => {
     option = document.createElement('option');
     option.value = estado;
     option.textContent = estado;
     selectEstados.appendChild(option);
   });
+
   $('.ui.checkbox').checkbox();
   $('.ui.radio.checkbox').checkbox();
+
   $('#estados').dropdown();
-  $('#data-inicio').datepicker();
-  dataDeInicio.onchange = () => $('#data-inicio').datepicker("option", "dateFormat", 'dd/mm/yy');
+
+  $('#data-inicio').datepicker({ maxDate: -1 , changeMonth: true, changeYear: true });
+ 
+  dataDeInicio.onchange = () =>  $('#data-inicio').datepicker("option", "dateFormat", 'dd/mm/yy');
+  
   formValidation();
 }
 
@@ -244,7 +250,7 @@ function formValidation() {
           {
             type   : 'checked',
             prompt : 'Selecione pelo menos uma rede social.'
-          }
+          },
         ]
       },
       resumo: {
