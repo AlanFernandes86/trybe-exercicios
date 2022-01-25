@@ -20,6 +20,7 @@ const pokemons = [
           measurementUnit: "kg"
       },
       image: "https://cdn2.bulbagarden.net/upload/0/0a/Spr_5b_004.png",
+      image2: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png",
       moreInfo: "https://bulbapedia.bulbagarden.net/wiki/Charmander_(Pok%C3%A9mon)"
   },
   {
@@ -31,6 +32,7 @@ const pokemons = [
           measurementUnit: "kg"
       },
       image: "https://cdn2.bulbagarden.net/upload/8/83/Spr_5b_010.png",
+      image2: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/010.png",
       moreInfo: "https://bulbapedia.bulbagarden.net/wiki/Caterpie_(Pok%C3%A9mon)"
   },
   {
@@ -42,6 +44,7 @@ const pokemons = [
           measurementUnit: "kg"
       },
       image: "https://cdn2.bulbagarden.net/upload/1/18/Spr_5b_023.png",
+      image2: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/023.png",
       moreInfo: "https://bulbapedia.bulbagarden.net/wiki/Ekans_(Pok%C3%A9mon)"
   },
   {
@@ -53,6 +56,7 @@ const pokemons = [
           measurementUnit: "kg"
       },
       image: "https://cdn2.bulbagarden.net/upload/8/88/Spr_5b_065_m.png",
+      image2: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/065.png",
       moreInfo: "https://bulbapedia.bulbagarden.net/wiki/Alakazam_(Pok%C3%A9mon)"
   },
   {
@@ -64,6 +68,7 @@ const pokemons = [
           measurementUnit: "kg"
       },
       image: "https://cdn2.bulbagarden.net/upload/4/43/Spr_5b_151.png",
+      image2: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/151.png",
       moreInfo: "https://bulbapedia.bulbagarden.net/wiki/Mew_(Pok%C3%A9mon)"
   },
   {
@@ -75,6 +80,7 @@ const pokemons = [
           measurementUnit: "kg"
       },
       image: "https://cdn2.bulbagarden.net/upload/5/58/Spr_5b_078.png",
+      image2: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/078.png",
       moreInfo: "https://bulbapedia.bulbagarden.net/wiki/Rapidash_(Pok%C3%A9mon)"
   },
   {
@@ -86,6 +92,7 @@ const pokemons = [
           measurementUnit: "kg"
       },
       image: "https://cdn2.bulbagarden.net/upload/4/40/Spr_5b_143.png",
+      image2: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/143.png",
       moreInfo: "https://bulbapedia.bulbagarden.net/wiki/Snorlax_(Pok%C3%A9mon)"
   },
   {
@@ -97,6 +104,7 @@ const pokemons = [
           measurementUnit: "kg"
       },
       image: "https://cdn2.bulbagarden.net/upload/2/2c/Spr_5b_148.png",
+      image2: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/148.png",
       moreInfo: "https://bulbapedia.bulbagarden.net/wiki/Dragonair_(Pok%C3%A9mon)"
   }
 ];

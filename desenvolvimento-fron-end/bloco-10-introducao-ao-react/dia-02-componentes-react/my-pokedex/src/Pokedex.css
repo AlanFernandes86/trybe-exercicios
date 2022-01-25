@@ -1,0 +1,10 @@
+body {
+  max-width: 870px;
+}
+
+.pokedex-card-contents {
+  padding: 32px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
