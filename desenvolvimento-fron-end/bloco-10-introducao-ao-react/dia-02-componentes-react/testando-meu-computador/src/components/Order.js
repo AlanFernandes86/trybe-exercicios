@@ -1,4 +1,5 @@
 // arquivo Order.js
+import PropTypes from 'prop-types';
 import React from 'react';
 
 class Order extends React.Component {
@@ -11,6 +12,17 @@ class Order extends React.Component {
       </div>
     );
   }
+}
+
+Order.propTypes = {
+  order: PropTypes.shape({
+    user: PropTypes.string.isRequired,
+    product: PropTypes.string,
+    price: PropTypes.shape({
+      value: PropTypes.number,
+      currency: PropTypes.string,
+    }),
+  })
 }
 
 export default Order;
