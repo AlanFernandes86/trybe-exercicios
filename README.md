@@ -57,84 +57,84 @@ __Bloco 05: JavaScript: DOM, Eventos e Web Storage__
 05.07: (Bônus) Projeto - Carta Misteriosa  ![NOK][url-badge-pendente]  
 
 __Bloco 06: HTML e CSS: Forms, Flexbox e Responsivo__  
-06.01: HTML & CSS - Forms  ![OK][url-badge-done]  
-06.02: Bibliotecas JavaScript e Frameworks CSS  ![OK][url-badge-done]  
-06.03: Introdução - CSS Flexbox  ![OK][url-badge-done]  
-06.03: CSS Flexbox - Parte 1  ![OK][url-badge-done]  
-06.04: CSS Flexbox - Parte 2  ![OK][url-badge-done]  
-06.05: CSS Responsivo - Mobile First  ![OK][url-badge-done]  
-06.06: Projeto - Trybewarts   ![OK][url-badge-done]  
+06.01: HTML & CSS - Forms  ![OK][url-badge-feito]  
+06.02: Bibliotecas JavaScript e Frameworks CSS  ![OK][url-badge-feito]  
+06.03: Introdução - CSS Flexbox  ![OK][url-badge-feito]  
+06.03: CSS Flexbox - Parte 1  ![OK][url-badge-feito]  
+06.04: CSS Flexbox - Parte 2  ![OK][url-badge-feito]  
+06.05: CSS Responsivo - Mobile First  ![OK][url-badge-feito]  
+06.06: Projeto - Trybewarts   ![OK][url-badge-feito]  
 
 __Bloco 07: Introdução à JavaScript ES6 e Testes Unitários__  
-07.01: JavaScript ES6 - let, const, arrow functions e template literals   ![OK][url-badge-done]  
-07.02: JavaScript ES6 - Objects   ![OK][url-badge-done]  
-07.03: Primeiros passos em Jest   ![OK][url-badge-done]  
-07.04: Projeto - JavaScript Testes Unitários   ![OK][url-badge-done]  
+07.01: JavaScript ES6 - let, const, arrow functions e template literals   ![OK][url-badge-feito]  
+07.02: JavaScript ES6 - Objects   ![OK][url-badge-feito]  
+07.03: Primeiros passos em Jest   ![OK][url-badge-feito]  
+07.04: Projeto - JavaScript Testes Unitários   ![OK][url-badge-feito]  
 
 __Bloco 08: Higher Order Functions do JavaScript ES6__  
-08.01: JavaScript ES6 - Introdução a Higher Order Functions   ![OK][url-badge-done]  
-08.02: JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort   ![OK][url-badge-done]  
-08.03: JavaScript ES6 - Higher Order Functions - map e filter   ![OK][url-badge-done]  
-08.04: JavaScript ES6 - Higher Order Functions - reduce   ![OK][url-badge-done]  
-08.05: JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais   ![OK][url-badge-done]  
-08.06: Projeto - Zoo functions   ![OK][url-badge-done]  
+08.01: JavaScript ES6 - Introdução a Higher Order Functions   ![OK][url-badge-feito]  
+08.02: JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort   ![OK][url-badge-feito]  
+08.03: JavaScript ES6 - Higher Order Functions - map e filter   ![OK][url-badge-feito]  
+08.04: JavaScript ES6 - Higher Order Functions - reduce   ![OK][url-badge-feito]  
+08.05: JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais   ![OK][url-badge-feito]  
+08.06: Projeto - Zoo functions   ![OK][url-badge-feito]  
 
 __Bloco 09: JavaScript e Testes Assíncronos__  
-09.01: JavaScript Assíncrono e Callbacks  ![OK][url-badge-done]  
-09.02: JavaScript Assíncrono - Fetch API e async/await  ![OK][url-badge-done]  
-09.03: Jest - Testes Assíncronos  ![OK][url-badge-done]  
-09.04: Projeto - Carrinho de Compras  ![OK][url-badge-done]  
+09.01: JavaScript Assíncrono e Callbacks  ![OK][url-badge-feito]  
+09.02: JavaScript Assíncrono - Fetch API e async/await  ![OK][url-badge-feito]  
+09.03: Jest - Testes Assíncronos  ![OK][url-badge-feito]  
+09.04: Projeto - Carrinho de Compras  ![OK][url-badge-feito]  
 
 ## Desenvolvimento Front-end :sunglasses:
 
 _Neste módulo, aprendemos as técnicas e ferramentas mais atuais para desenvolver um código de front-end que seja rápido, bonito e testável._
 
 __Bloco 10: Introdução à React__  
-10.01: Introdução - Front-end  ![OK][url-badge-done]  
-10.01: Introdução - React  ![OK][url-badge-done]  
-10.01: 'Hello, world!' no React!  ![OK][url-badge-done]  
-10.02: Componentes React  ![OK][url-badge-done]  
-10.03: Projeto - Sistema Solar10.  ![OK][url-badge-done]  
+10.01: Introdução - Front-end  ![OK][url-badge-feito]  
+10.01: Introdução - React  ![OK][url-badge-feito]  
+10.01: 'Hello, world!' no React!  ![OK][url-badge-feito]  
+10.02: Componentes React  ![OK][url-badge-feito]  
+10.03: Projeto - Sistema Solar10.  ![OK][url-badge-feito]  
 
 __Bloco 11: Componentes com Estado, Eventos e Formulários com React__  
-11.01: Componentes com estado e eventos  ![OK][url-badge-done]  
-11.02: Formulários no React  ![OK][url-badge-done]  
-11.03: Projeto - Tryunfo  ![OK][url-badge-done]  
+11.01: Componentes com estado e eventos  ![OK][url-badge-feito]  
+11.02: Formulários no React  ![OK][url-badge-feito]  
+11.03: Projeto - Tryunfo  ![OK][url-badge-feito]  
 
 __Bloco 12: Ciclo de Vida de Componentes e React Router__  
-12.01: Ciclo de vida de componentes  ![OK][url-badge-done]  
-12.02: React Router  ![OK][url-badge-done]  
-12.03: Projeto - TrybeTunes  ![OK][url-badge-done]  
+12.01: Ciclo de vida de componentes  ![OK][url-badge-feito]  
+12.02: React Router  ![OK][url-badge-feito]  
+12.03: Projeto - TrybeTunes  ![OK][url-badge-feito]  
 
 __Bloco 13: Metodologias Ágeis__  
-13.01: Metodologias Ágeis  ![OK][url-badge-done]  
-13.02: Projeto - Frontend Online Store  ![OK][url-badge-done]  
+13.01: Metodologias Ágeis  ![OK][url-badge-feito]  
+13.02: Projeto - Frontend Online Store  ![OK][url-badge-feito]  
 
 __Bloco 14: Testes automatizados com React Testing Library__  
-14.01: RTL - Primeiros passos  ![OK][url-badge-done]  
-14.02: RTL - Mocks e Inputs  ![OK][url-badge-done]  
-14.03: RTL - Testando React Router  ![OK][url-badge-done]  
-14.04: Projeto - Testes em React  ![OK][url-badge-done]  
+14.01: RTL - Primeiros passos  ![OK][url-badge-feito]  
+14.02: RTL - Mocks e Inputs  ![OK][url-badge-feito]  
+14.03: RTL - Testando React Router  ![OK][url-badge-feito]  
+14.04: Projeto - Testes em React  ![OK][url-badge-feito]  
 
 __Bloco 15: Gerenciamento de estado com Redux__  
-15.01: Introdução ao Redux - O estado global da aplicação  ![OK][url-badge-done]  
-15.02: Usando o Redux no React  ![OK][url-badge-done]  
-15.03: Usando o Redux no React - Prática  ![OK][url-badge-done]  
-15.04: Usando o Redux no React - Actions Assíncronas  ![OK][url-badge-done]  
-15.05: Testes em React-Redux  ![OK][url-badge-done]  
-15.06: Projeto - Trybe Wallet  ![OK][url-badge-done]  
+15.01: Introdução ao Redux - O estado global da aplicação  ![OK][url-badge-feito]  
+15.02: Usando o Redux no React  ![OK][url-badge-feito]  
+15.03: Usando o Redux no React - Prática  ![OK][url-badge-feito]  
+15.04: Usando o Redux no React - Actions Assíncronas  ![OK][url-badge-feito]  
+15.05: Testes em React-Redux  ![OK][url-badge-feito]  
+15.06: Projeto - Trybe Wallet  ![OK][url-badge-feito]  
 
 __Bloco 16: Projeto Jogo de Trivia__  
-16.01: Projeto - Jogo de Trivia  ![OK][url-badge-done]  
+16.01: Projeto - Jogo de Trivia  ![OK][url-badge-feito]  
 
 __Bloco 17: Context API e React Hooks__  
-17.01: Context API do React  ![OK][url-badge-done]  
-17.02: React Hooks - useState e useContext  ![OK][url-badge-done]  
-17.03: React Hooks - useEffect e Hooks customizados  ![OK][url-badge-done]  
-17.04: Projeto - StarWars Datatable com Context API e Hooks  ![OK][url-badge-done]  
+17.01: Context API do React  ![OK][url-badge-feito]  
+17.02: React Hooks - useState e useContext  ![OK][url-badge-feito]  
+17.03: React Hooks - useEffect e Hooks customizados  ![OK][url-badge-feito]  
+17.04: Projeto - StarWars Datatable com Context API e Hooks  ![OK][url-badge-feito]  
 
 __Bloco 18: Projeto App de Receitas__  
-18.01: Projeto - App de Receitas  ![OK][url-badge-done]  
+18.01: Projeto - App de Receitas  ![OK][url-badge-feito]  
 
 
 ## Desenvolvimento Back-end :nerd_face:
